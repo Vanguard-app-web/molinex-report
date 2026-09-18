@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="270" viewBox="0 0 620 270">
+  <rect width="620" height="270" fill="#ffffff"/>
+  <text x="310" y="38" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#1a1a1a">Integrantes</text>
+
+  <text x="40" y="80" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1a1a">Código</text>
+  <text x="180" y="80" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="700" fill="#1a1a1a">Apellidos y Nombres</text>
+
+  <text x="40" y="118" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">u202424008</text>
+  <text x="180" y="118" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">Casalino Berrocal, Luisa Nhiriel</text>
+
+  <text x="40" y="152" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">u202424466</text>
+  <text x="180" y="152" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">Gallegos De La Cruz, Giovanni Marcelo</text>
+
+  <text x="40" y="186" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">u20241e550</text>
+  <text x="180" y="186" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">Huerta Cardenas, Brayan Benjamin</text>
+
+  <text x="40" y="220" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">u202420031</text>
+  <text x="180" y="220" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">Jimenez Saavedra, Antony Alexander</text>
+
+  <text x="40" y="254" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">u202423883</text>
+  <text x="180" y="254" font-family="Helvetica, Arial, sans-serif" font-size="15" fill="#1a1a1a">Rivera Rupay, Fabricio Jose</text>
+</svg>
