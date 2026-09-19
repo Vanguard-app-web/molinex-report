@@ -310,12 +310,25 @@ We’ll know we are successful when users regularly consult the platform, monito
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
 
-_Un Hypothesis Statement por cada Feature Assumption._
+Hypothesis 1: Operational Dashboard
 
-> We believe we will achieve [this business outcome]
-> If [these personas]
-> Attain [this benefit/user outcome]
-> With [this feature or solution]
+We believe we will achieve improved operational decision-making and process visibility If administrators and production supervisors Attain a better understanding of the mill’s performance indicators With a dashboard that displays production performance, waste, and rice quality data.
+
+Hypothesis 2: Lot Management
+
+We believe we will achieve better traceability and control of raw materials If administrators and production supervisors Attain faster access to information about received raw materials and production lots With a lot management module that allows users to register, track, and consult lot information.
+
+Hypothesis 3: Maintenance Management
+
+We believe we will achieve reduced unexpected equipment failures and downtime If maintenance technicians and production supervisors Attain better visibility of equipment conditions and scheduled maintenance activities With a maintenance module that allows users to register maintenance activities and identify possible anomalies.
+
+Hypothesis 4: Intelligent Analysis and Recommendations
+
+We believe we will achieve reduced operational losses and improved production performance If administrators, production supervisors, and maintenance technicians Attain timely information about possible causes of losses and operational problems With an intelligent analysis engine that relates operational data and generates alerts and recommendations.
+
+Hypothesis 5: Subscription Plans
+
+We believe we will achieve customer acquisition and recurring revenue If owners and administrators of small, medium-sized, and large rice mills Attain access to functionalities that match their operational needs and available resources With differentiated Basic, Professional, and Enterprise subscription plans.
 
 #### 1.2.2.4 Lean UX Canvas
 
