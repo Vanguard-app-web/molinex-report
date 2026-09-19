@@ -519,11 +519,17 @@ _URL pública del Impact Map en UXPressia:_ `[URL]`
 
 ### 4.3.1 Landing Page Wireframe
 
-[Wireframes Desktop y Mobile elaborados en Figma.]
+El wireframe del Landing Page traduce a bloques de baja fidelidad la organización definida en 4.2.1: un recorrido jerárquico y secuencial que va desde la propuesta de valor hasta el formulario de contacto, sin comprometer aún color ni tipografía final. Su objetivo es validar la agrupación y jerarquía del contenido antes de aplicar el Design System.
+
+La propuesta contempla: un encabezado con navegación (Solution, Features, Plans) y la acción principal de contacto; un Hero con título, descripción, dos llamadas a la acción y un panel de vista previa del dashboard operativo; una sección de problemática con tres tarjetas (Scattered data, Unexpected downtime, Hidden losses); una sección de funcionalidades con cuatro tarjetas, la primera en estado activo; una sección de audiencias con tres columnas (Managers, Maintenance Technicians, Production Operators); una sección de planes con tres tarjetas de precio; un formulario de contacto; y un footer con marca y enlaces de navegación y legales.
 
 <p align="center">
-  <img src="assets/design/landing-wireframe.png" alt="Wireframe del Landing Page de Molinex" width="100%">
+  <img src="assets/design/landing-wireframe.webp" alt="Wireframe Desktop del Landing Page de Molinex" width="100%">
 </p>
+
+**Figura: Wireframe Desktop del Landing Page de Molinex. Fuente: elaboración propia en Figma.**
+
+> Pendiente: versión Mobile Web Browser del wireframe.
 
 ### 4.3.2 Landing Page Mockup
 
