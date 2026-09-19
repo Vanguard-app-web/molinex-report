@@ -273,14 +273,15 @@ Para analizar preliminarmente la problemática, se aplicó la técnica de las 5W
 
 #### 1.2.2.1 Lean UX Problem Statements
 
-_Un único Problem Statement para todo el proyecto (versión Brand new initiative), considerando todos los segmentos._
+The current state of the rice milling industry has focused mainly on managing production, raw materials, quality control, maintenance, and operational performance through separate records or systems that do not always integrate the information generated throughout the process.
 
-> The current state of [the domain we are working in] has focused mainly on [these customer segments, these pain points, these workflows, etc.].
-> What existing products/services fail to address is [this gap or change in the marketplace].
-> Our product/service will address this gap by [this product strategy or approach].
-> Our initial focus will be [this audience segment].
-> We'll know we are successful when we see [these measurable behaviors in our target audience].
+What existing products and services fail to fully address is the need to relate operational data in order to identify the possible causes of losses, detect anomalies, anticipate equipment failures, and improve production performance.
 
+Our product, Molinex, will address this gap through a web-based SaaS platform that centralizes and analyzes data related to raw materials, production, quality, maintenance, and operational indicators. The platform will generate alerts and intelligent recommendations to support decision-making and optimize the milling process.
+
+Our initial focus will be small and medium-sized rice mills that need to improve operational control, reduce losses, and make decisions based on integrated information.
+
+We’ll know we are successful when users regularly consult the platform, monitor operational indicators, respond to alerts and recommendations, and achieve improvements in production performance, waste reduction, and the control of whole and broken rice.
 #### 1.2.2.2 Lean UX Assumptions
 
 **Business Assumptions**
