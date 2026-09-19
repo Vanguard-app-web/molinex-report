@@ -284,19 +284,28 @@ _Un único Problem Statement para todo el proyecto (versión Brand new initiativ
 #### 1.2.2.2 Lean UX Assumptions
 
 **Business Assumptions**
-- [ ]
+- Creemos que los molinos de arroz estarán interesados en utilizar una plataforma digital para mejorar sus operaciones.
+- Creemos que el modelo de suscripción permitirá que Molinex sea sostenible y escalable.
 
 **Business Outcome Assumptions**
-- [ ]
+- Creemos que Molinex generará ingresos recurrentes mediante sus planes de suscripción.
+- Creemos que la plataforma permitirá captar y retener clientes del sector arrocero.
 
 **User Assumptions**
-- [ ]
+- Creemos que los administradores y supervisores necesitan centralizar la información de producción, calidad y mantenimiento. 
+- Creemos que los usuarios requieren una interfaz sencilla para consultar indicadores y gestionar sus operaciones.
 
 **User Outcome and Benefit Assumptions**
-- [ ]
+- Creemos que los usuarios podrán identificar posibles causas de pérdidas y fallas con mayor rapidez. 
+- Creemos que los usuarios mejorarán la toma de decisiones y el control de sus procesos. 
+- Creemos que la plataforma contribuirá a reducir mermas y mejorar el rendimiento operativo.
 
 **Feature Assumptions**
-- [ ]
+- Creemos que un dashboard permitirá monitorear indicadores como rendimiento, merma y calidad. 
+- Creemos que el registro de lotes permitirá realizar un mejor seguimiento de la materia prima. 
+- Creemos que el módulo de mantenimiento permitirá registrar actividades y detectar posibles anomalías. 
+- Creemos que el motor de análisis inteligente podrá generar alertas y recomendaciones a partir de los datos operativos. 
+- Creemos que los planes de suscripción permitirán ofrecer funcionalidades según las necesidades de cada molino.
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
 
