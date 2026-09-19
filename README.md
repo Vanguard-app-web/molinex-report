@@ -237,21 +237,37 @@ Ser la plataforma de referencia en inteligencia operativa para la industria arro
 
 ### 1.2.1 Antecedentes y problemática
 
-[Aproximación preliminar a los antecedentes y la problemática, aplicando la técnica de las 5W2H.]
+En los molinos de arroz, el proceso productivo genera información relacionada con la materia prima, producción, calidad, mantenimiento y rendimiento de las máquinas. Sin embargo, esta información suele encontrarse dispersa o utilizarse únicamente para visualizar indicadores, dificultando la identificación de las causas de problemas como el aumento del arroz quebrado, la merma, las fallas de maquinaria y la disminución del rendimiento.
+
+Para analizar preliminarmente la problemática, se aplicó la técnica de las 5W2H:
 
 | Elemento 5W2H | Definición para Molinex |
 |:--|:--|
-| Who | [ ] |
-| What | [ ] |
-| Where | [ ] |
-| When | [ ] |
-| Why | [ ] |
-| How | [ ] |
-| How much | [ ] |
+| Who |A los propietarios, administradores, supervisores, técnicos de mantenimiento y trabajadores de los molinos de arroz.|
+| What | Se presentan pérdidas de materia prima, disminución del rendimiento, aumento de arroz quebrado y fallas inesperadas en las máquinas. |
+| Where | En las diferentes etapas del proceso productivo de los molinos de arroz. |
+| When | Durante la recepción de materia prima, procesamiento, mantenimiento y control de calidad, especialmente cuando no se detectan oportunamente las anomalías. |
+| Why | Porque los datos de producción, calidad, mantenimiento y materia prima no siempre se encuentran integrados ni relacionados para identificar las causas de los problemas. |
+| How | Mediante mermas, menor cantidad de arroz entero, fallas de maquinaria, paradas no planificadas y decisiones basadas en información limitada. |
+| How much | Genera costos adicionales, desperdicio de materia prima, disminución de la productividad y posibles pérdidas económicas para el molino. La cuantificación exacta será determinada durante la investigación y validación con usuarios. |
 
-**Objetivo general.** [ ]
 
-**Objetivos específicos.** [ ]
+
+
+
+**Objetivo General**
+* **Desarrollar** una plataforma web inteligente que integre y analice los datos operativos de los molinos de arroz para detectar posibles causas de pérdidas, anticipar problemas y mejorar la eficiencia del proceso productivo.
+
+
+
+**Objetivos Específicos**
+
+* **Centralizar** la información relacionada con la materia prima, producción, calidad y mantenimiento.
+* **Permitir** el monitoreo de indicadores como rendimiento, merma y porcentaje de arroz entero y quebrado.
+* **Detectar** anomalías y posibles fallas en el proceso productivo y en la maquinaria.
+* **Generar** alertas y recomendaciones que apoyen la toma de decisiones operativas.
+* **Implementar** planes de suscripción diferenciados según las necesidades de los molinos pequeños, medianos y grandes.
+* **Evaluar** la utilidad de la plataforma mediante pruebas con usuarios y el análisis de indicadores operativos.
 
 ### 1.2.2 Lean UX Process
 
