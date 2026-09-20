@@ -1360,7 +1360,13 @@ Este mockup corresponde a la versión ya implementada y desplegada del Landing P
 
 _Archivo de diseño en Figma:_ `https://www.figma.com/design/QytNXR0eMrUtT5MNpJarbK/Figma-Molinex`
 
-> Pendiente: versión Mobile Web Browser del mockup.
+El mockup Mobile aplica el mismo Design System de la versión Desktop (Azul Molinex `#0B4F8A`, Dorado `#F2B705`, tipografía Poppins/Inter) sobre la estructura de una sola columna. El panel del dashboard operativo conserva los indicadores de ejemplo (rendimiento 86.4 %, merma 4.8 %), el indicador "Live" y la alerta de mantenimiento. La tarjeta del plan Professional mantiene la insignia dorada "Most flexible" para destacarse frente a Basic y Enterprise, ahora apiladas en una sola columna. El footer conserva el fondo azul oscuro con los enlaces de navegación y las secciones legales (Terms and conditions, Privacy policy), garantizando consistencia de marca entre ambos breakpoints.
+
+<p align="center">
+  <img src="assets/design/landing-mockup-mobile.webp" alt="Mockup Mobile del Landing Page de Molinex" width="320">
+</p>
+
+**Figura: Mockup Mobile del Landing Page de Molinex. Fuente: elaboración propia en Figma.**
 
 ## 4.4 Web Applications UX/UI Design
 
