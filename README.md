@@ -1675,7 +1675,7 @@ El diagrama de contexto presenta a Molinex como un único sistema de software, m
 
 ### 4.6.4 Software Architecture Components Diagrams
 
-Los diagramas de componentes se organizan por producto de software y por límite funcional. Para cada producto se presenta primero una vista general y luego una vista detallada por Bounded Context, además de la estructura compartida correspondiente. Esta separación evita mezclar los límites propios de Angular con los del monolito modular de Spring Boot.
+Los diagramas de componentes se organizan por producto de software y por límite funcional. Para cada producto se presenta primero una vista general y luego una vista detallada por Bounded Context, además de la estructura compartida correspondiente. Esta separación evita mezclar las responsabilidades de la Web Application desarrollada con Vue y JavaScript con las del monolito modular implementado mediante ASP.NET Core y C#.
 
 #### Frontend Component Diagrams
 

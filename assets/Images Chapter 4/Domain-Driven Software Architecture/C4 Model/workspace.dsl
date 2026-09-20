@@ -25,12 +25,12 @@ workspace "Molinex Platform" "C4 model for the Molinex rice mill operational man
                 tags "Landing Page"
             }
 
-            webApplication = container "Web Application" "Provides role-based operational management and analytics through a responsive browser experience." "Angular and TypeScript" {
+            webApplication = container "Web Application" "Provides role-based operational management and analytics through a responsive browser experience." "Vue, JavaScript and PrimeVue" {
                 tags "Web Application"
                 !include frontend-components.dsl
             }
 
-            apiApplication = container "RESTful API" "Implements the Molinex business capabilities as a modular monolith with isolated domain models." "Java and Spring Boot" {
+            apiApplication = container "RESTful API" "Implements the Molinex business capabilities as a modular monolith with isolated domain models." "C#, ASP.NET Core and Entity Framework Core" {
                 tags "Backend Application"
                 !include backend-components.dsl
             }

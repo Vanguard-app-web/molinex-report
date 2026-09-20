@@ -11,47 +11,47 @@ package "Asset and Maintenance Management Bounded Context" #EAF3F8 {
   class Machine <<Aggregate Root>> {
     -id : MachineId
     -code : MachineCode
-    -name : String
-    -model : String
+    -name : string
+    -model : string
     -status : MachineStatus
-    -statusChangedAt : Instant
+    -statusChangedAt : DateTimeOffset
     --
     +register(code, name, model)
-    +changeStatus(status : MachineStatus, changedAt : Instant)
+    +changeStatus(status : MachineStatus, changedAt : DateTimeOffset)
   }
 
   class MaintenanceRecord <<Aggregate Root>> {
     -id : MaintenanceRecordId
     -machineId : MachineId
     -type : MaintenanceType
-    -performedAt : Instant
+    -performedAt : DateTimeOffset
     -description : MaintenanceDescription
     -responsible : TechnicianReference
-    -anomalyReference : Optional<AnomalyReference>
+    -anomalyReference : AnomalyReference?
     --
     +recordPreventive(machineId, performedAt, description, responsible)
     +recordCorrective(machineId, performedAt, description, responsible, anomaly)
   }
 
   class MachineId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class MaintenanceRecordId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class MachineCode <<Value Object>> {
-    -value : String
+    -value : string
   }
   class MaintenanceDescription <<Value Object>> {
-    -value : String
-    +isBlank() : boolean
+    -value : string
+    +isBlank() : bool
   }
   class TechnicianReference <<Value Object>> {
-    -principalId : UUID
-    -displayName : String
+    -principalId : Guid
+    -displayName : string
   }
   class AnomalyReference <<Value Object>> {
-    -anomalyId : UUID
+    -anomalyId : Guid
   }
 
   enum MachineStatus <<Enumeration>> {
@@ -67,12 +67,12 @@ package "Asset and Maintenance Management Bounded Context" #EAF3F8 {
 
   interface MachineRepository <<Repository>> {
     +save(machine : Machine)
-    +findById(id : MachineId) : Optional<Machine>
-    +existsByCode(code : MachineCode) : boolean
+    +findById(id : MachineId) : Machine?
+    +existsByCode(code : MachineCode) : bool
   }
   interface MaintenanceRecordRepository <<Repository>> {
     +save(record : MaintenanceRecord)
-    +findById(id : MaintenanceRecordId) : Optional<MaintenanceRecord>
+    +findById(id : MaintenanceRecordId) : MaintenanceRecord?
     +findByMachineId(machineId : MachineId) : List<MaintenanceRecord>
   }
 }

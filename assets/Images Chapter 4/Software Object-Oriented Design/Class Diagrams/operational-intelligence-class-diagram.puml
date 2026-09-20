@@ -12,7 +12,7 @@ package "Operational Intelligence Bounded Context" #EAF3F8 {
     -id : OperationalReadingId
     -machineId : MachineId
     -measurement : OperationalMeasurement
-    -recordedAt : Instant
+    -recordedAt : DateTimeOffset
     --
     +record(machineId, measurement, recordedAt)
   }
@@ -22,7 +22,7 @@ package "Operational Intelligence Bounded Context" #EAF3F8 {
     -readingId : OperationalReadingId
     -measurement : OperationalMeasurement
     -criterion : EvaluationCriterion
-    -detectedAt : Instant
+    -detectedAt : DateTimeOffset
     -status : AnomalyStatus
     --
     +acknowledge()
@@ -34,34 +34,34 @@ package "Operational Intelligence Bounded Context" #EAF3F8 {
     -anomalyId : OperationalAnomalyId
     -priority : AlertPriority
     -status : AlertStatus
-    -generatedAt : Instant
+    -generatedAt : DateTimeOffset
     --
     +acknowledge()
     +close()
   }
 
   class OperationalReadingId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class OperationalAnomalyId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class AlertId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class MachineId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
 
   class OperationalMeasurement <<Value Object>> {
-    -variableName : String
-    -value : BigDecimal
-    -unitSymbol : String
+    -variableName : string
+    -value : decimal
+    -unitSymbol : string
   }
   class EvaluationCriterion <<Value Object>> {
-    -minimum : BigDecimal
-    -maximum : BigDecimal
-    +isViolatedBy(value : BigDecimal) : boolean
+    -minimum : decimal
+    -maximum : decimal
+    +isViolatedBy(value : decimal) : bool
   }
 
   enum AnomalyStatus <<Enumeration>> {
@@ -82,25 +82,25 @@ package "Operational Intelligence Bounded Context" #EAF3F8 {
   }
 
   class AnomalyDetectionService <<Domain Service>> {
-    +detect(reading : OperationalReading, criterion : EvaluationCriterion) : Optional<OperationalAnomaly>
+    +detect(reading : OperationalReading, criterion : EvaluationCriterion) : OperationalAnomaly?
   }
 
   class MaintenanceRecommendation <<Read Model>> {
-    +machineId : UUID
-    +anomalyId : UUID
-    +suggestedAction : String
-    +priority : String
+    +machineId : Guid
+    +anomalyId : Guid
+    +suggestedAction : string
+    +priority : string
   }
 
   interface SensorGatewayPort <<Port>> {
     +receive(payload : SensorReadingPayload) : OperationalReading
   }
   class SensorReadingPayload <<External DTO>> {
-    +machineReference : String
-    +variableName : String
-    +value : BigDecimal
-    +unitSymbol : String
-    +recordedAt : Instant
+    +machineReference : string
+    +variableName : string
+    +value : decimal
+    +unitSymbol : string
+    +recordedAt : DateTimeOffset
   }
   interface NotificationPort <<Port>> {
     +sendOperationalAlert(alert : Alert)
@@ -108,15 +108,15 @@ package "Operational Intelligence Bounded Context" #EAF3F8 {
 
   interface OperationalReadingRepository <<Repository>> {
     +save(reading : OperationalReading)
-    +findById(id : OperationalReadingId) : Optional<OperationalReading>
+    +findById(id : OperationalReadingId) : OperationalReading?
   }
   interface OperationalAnomalyRepository <<Repository>> {
     +save(anomaly : OperationalAnomaly)
-    +findById(id : OperationalAnomalyId) : Optional<OperationalAnomaly>
+    +findById(id : OperationalAnomalyId) : OperationalAnomaly?
   }
   interface AlertRepository <<Repository>> {
     +save(alert : Alert)
-    +findById(id : AlertId) : Optional<Alert>
+    +findById(id : AlertId) : Alert?
   }
 }
 

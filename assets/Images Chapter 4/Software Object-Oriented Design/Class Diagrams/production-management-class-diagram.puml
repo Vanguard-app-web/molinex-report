@@ -9,10 +9,10 @@ skinparam packageStyle rectangle
 
 package "Production-Quality Shared Kernel" #FFF2CC {
   class Weight <<Value Object>> {
-    -value : BigDecimal
+    -value : decimal
     -unit : MeasurementUnit
-    +isPositive() : boolean
-    +isNonNegative() : boolean
+    +isPositive() : bool
+    +isNonNegative() : bool
   }
 
   enum MeasurementUnit <<Enumeration>> {
@@ -24,7 +24,7 @@ package "Production-Quality Shared Kernel" #FFF2CC {
 package "Production Management Bounded Context" #EAF3F8 {
   class RawMaterialReception <<Aggregate Root>> {
     -id : RawMaterialReceptionId
-    -receivedAt : Instant
+    -receivedAt : DateTimeOffset
     -supplier : Supplier
     -origin : MaterialOrigin
     -quantity : Weight
@@ -36,7 +36,7 @@ package "Production Management Bounded Context" #EAF3F8 {
     -id : ProductionBatchId
     -code : BatchCode
     -receptionId : RawMaterialReceptionId
-    -registeredAt : Instant
+    -registeredAt : DateTimeOffset
     --
     +register(code, receptionId, registeredAt)
   }
@@ -45,37 +45,37 @@ package "Production Management Bounded Context" #EAF3F8 {
     -id : ProductionRecordId
     -batchId : ProductionBatchId
     -details : ProductionDetails
-    -recordedAt : Instant
+    -recordedAt : DateTimeOffset
     --
     +record(batchId, details, recordedAt)
     +updateDetails(details : ProductionDetails)
   }
 
   class RawMaterialReceptionId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class ProductionBatchId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class ProductionRecordId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class BatchCode <<Value Object>> {
-    -value : String
+    -value : string
   }
   class Supplier <<Value Object>> {
-    -name : String
+    -name : string
   }
   class MaterialOrigin <<Value Object>> {
-    -description : String
+    -description : string
   }
   class ProductionDetails <<Value Object>> {
-    -processName : String
+    -processName : string
     -processedWeight : Weight
-    -startedAt : Instant
-    -finishedAt : Optional<Instant>
+    -startedAt : DateTimeOffset
+    -finishedAt : DateTimeOffset?
     -status : ProductionStatus
-    +isChronologicallyValid() : boolean
+    +isChronologicallyValid() : bool
   }
   enum ProductionStatus <<Enumeration>> {
     REGISTERED
@@ -85,16 +85,16 @@ package "Production Management Bounded Context" #EAF3F8 {
 
   interface RawMaterialReceptionRepository <<Repository>> {
     +save(reception : RawMaterialReception)
-    +findById(id : RawMaterialReceptionId) : Optional<RawMaterialReception>
+    +findById(id : RawMaterialReceptionId) : RawMaterialReception?
   }
   interface ProductionBatchRepository <<Repository>> {
     +save(batch : ProductionBatch)
-    +findById(id : ProductionBatchId) : Optional<ProductionBatch>
-    +existsByCode(code : BatchCode) : boolean
+    +findById(id : ProductionBatchId) : ProductionBatch?
+    +existsByCode(code : BatchCode) : bool
   }
   interface ProductionRecordRepository <<Repository>> {
     +save(record : ProductionRecord)
-    +findById(id : ProductionRecordId) : Optional<ProductionRecord>
+    +findById(id : ProductionRecordId) : ProductionRecord?
   }
 }
 
