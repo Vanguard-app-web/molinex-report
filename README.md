@@ -94,10 +94,10 @@ Para el desarrollo del informe perteneciente a la entrega TB1, se dividió la im
 
 ### Repositorios del proyecto
 
-- Project Report: `https://github.com/Vanguard-open-source/molinex-report`
-- Landing Page: `https://github.com/upc-pre-202620-1asi0729-7753-u20241e550/molinex-website`
-- Frontend Web Application: `https://github.com/upc-pre-202620-1asi0729-7753-u20241e550/molinex-webapp`
-- RESTful API: `https://github.com/upc-pre-202620-1asi0729-7753-u20241e550/molinex-platform`
+- Project Report: `https://github.com/Vanguard-app-web/molinex-report-apweb`
+- Landing Page: `https://github.com/Vanguard-app-web/molinex-website-apweb`
+- Frontend Web Application: repositorio pendiente de creación (fuera del alcance de despliegue de este AV1).
+- RESTful API: repositorio pendiente de creación (fuera del alcance de despliegue de este AV1).
 
 ### Entrega AV1
 
@@ -1675,7 +1675,7 @@ El diagrama de contexto presenta a Molinex como un único sistema de software, m
 
 ### 4.6.4 Software Architecture Components Diagrams
 
-Los diagramas de componentes se organizan por producto de software y por límite funcional. Para cada producto se presenta primero una vista general y luego una vista detallada por Bounded Context, además de la estructura compartida correspondiente. Esta separación evita mezclar las responsabilidades de la Web Application desarrollada con Vue y JavaScript con las del monolito modular implementado mediante ASP.NET Core y C#.
+Los diagramas de componentes se organizan por producto de software y por límite funcional. Para cada producto se presenta primero una vista general y luego una vista detallada por Bounded Context, además de la estructura compartida correspondiente. Esta separación evita mezclar los límites propios de Angular con los del monolito modular de Spring Boot.
 
 #### Frontend Component Diagrams
 
@@ -1946,24 +1946,52 @@ Reporting and Analytics se modela como un *read side*: consume eventos expresado
 
 | Producto | Tecnologías | Herramientas principales |
 |:--|:--|:--|
-| Landing Page | | |
-| Web Application | | |
-| RESTful API | | |
-| Database | | |
+| Landing Page | HTML5, CSS3, JavaScript | WebStorm |
+| Web Application | Vue, HTML5, CSS3, JavaScript, Material Design, PrimeVue | WebStorm |
+| RESTful API | ASP.NET Core, Entity Framework Core, C# | Rider |
+| Database | MySQL Server | MySQL Workbench |
 
 ### 5.1.2 Source Code Management
 
-[Repositorios, GitFlow (branches y convenciones), Conventional Commits, Semantic Versioning.]
+El proyecto Molinex utiliza **Git** y **GitHub** como sistema de control de versiones, organizado en repositorios independientes por producto dentro de la organización [Vanguard-app-web](https://github.com/Vanguard-app-web):
+
+- Informe del proyecto: [molinex-report-apweb](https://github.com/Vanguard-app-web/molinex-report-apweb)
+- Landing Page: [molinex-website-apweb](https://github.com/Vanguard-app-web/molinex-website-apweb)
+
+Los repositorios de la Web Application y el RESTful API se crearán en una etapa posterior del proyecto, ya que su implementación y despliegue no forman parte del alcance de esta entrega (AV1).
+
+**GitFlow.** Cada repositorio sigue el modelo de ramificación GitFlow, con las ramas `main` (versiones estables) y `develop` (integración continua) como base, y las siguientes ramas de soporte:
+
+| Rama | Prefijo | Uso |
+|:--|:--|:--|
+| Feature | `feature/` | Desarrollo de una funcionalidad específica; se integra a `develop` al finalizar |
+| Release | `release/` | Preparación de una nueva versión antes de fusionarla a `main` y `develop` |
+| Hotfix | `hotfix/` | Corrección urgente aplicada directamente sobre `main` |
+
+El equipo gestiona estas ramas mediante la extensión `git-flow` (línea de comandos) y el plugin **Git Flow Helper** de Rider.
+
+**Conventional Commits.** Los mensajes de commit siguen la convención `tipo(alcance opcional): descripción`, utilizando tipos como `feat` (nueva funcionalidad), `chore` (tareas de mantenimiento) y `docs` (cambios de documentación).
+
+**Semantic Versioning.** Las versiones publicadas siguen el formato `MAJOR.MINOR.PATCH` (por ejemplo, `v0.1.0`), incrementadas mediante ramas `release/` y marcadas con tags de Git.
 
 ### 5.1.3 Source Code Style Guide & Coding Conventions
 
 | Área | Convenciones |
 |:--|:--|
-| | |
+| HTML/CSS/JavaScript (Landing Page) | Clases CSS en kebab-case, variables y funciones JavaScript en camelCase, indentación de 2 espacios |
+| Vue (Web Application) | Convenciones de la Vue Style Guide oficial: componentes en PascalCase, props en camelCase; componentes de interfaz basados en PrimeVue con Material Design |
+| C# / ASP.NET Core (RESTful API) | Convenciones oficiales de C#: PascalCase para clases, métodos y propiedades; camelCase para variables locales y parámetros |
+| Control de versiones | Conventional Commits para los mensajes de commit; Semantic Versioning para el versionado de releases |
 
 ### 5.1.4 Software Deployment Configuration
 
-[ ]
+La Landing Page de Molinex se despliega mediante **GitHub Pages**, sirviendo directamente los archivos estáticos (`index.html`, `styles.css`, `script.js`) desde la rama `main` del repositorio [molinex-website-apweb](https://github.com/Vanguard-app-web/molinex-website-apweb).
+
+El flujo de despliegue sigue el modelo GitFlow: los cambios se integran en `develop` a través de ramas `feature/`, y se publican en producción únicamente al fusionar una rama `release/` hacia `main`, momento en el cual GitHub Pages sirve automáticamente la nueva versión.
+
+> Nota: el repositorio de la Landing Page ya existe en GitHub con el código fuente completo; la activación de GitHub Pages y el primer release (`v0.1.0`) se encuentran en proceso de configuración.
+
+La Web Application y el RESTful API no cuentan con configuración de despliegue en esta entrega, dado que su implementación se definió como fuera del alcance del AV1.
 
 ## 5.2 Landing Page, Services & Applications Implementation
 
@@ -2072,16 +2100,16 @@ La documentación de los servicios facilita la validación y posterior integraci
 
 #### 5.2.1.7 Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 1 se configuró el despliegue de los componentes principales de Molinex. La solución está conformada por la Landing Page, la Web Application y el RESTful API.
+Durante el Sprint 1 se avanzó en la configuración de despliegue de la Landing Page de Molinex, único componente cuyo despliegue forma parte del alcance de esta entrega (AV1). La Web Application y el RESTful API se implementarán y desplegarán en una etapa posterior del proyecto.
 
-La configuración de despliegue permite publicar los componentes del sistema en sus respectivos entornos y verificar su disponibilidad para las pruebas de integración.
+La configuración de despliegue permite publicar la Landing Page en su entorno de operación y verificar su disponibilidad pública.
 
 | Componente | Plataforma de despliegue | Estado | URL |
 |:--|:--|:--|:--|
-| Landing Page | GitHub Pages | Desplegado | [URL de la Landing Page](URL_LANDING_PAGE) |
-| Web Application | Plataforma de despliegue utilizada | Pendiente/Desplegado | [URL de la Web Application](URL_WEB_APPLICATION) |
-| RESTful API | Plataforma de despliegue utilizada | Pendiente/Desplegado | [URL del RESTful API](URL_RESTFUL_API) |
-| Swagger UI | Plataforma de despliegue utilizada | Pendiente/Disponible | [URL de Swagger UI](URL_SWAGGER_UI) |
+| Landing Page | GitHub Pages | En proceso de activación | Repositorio disponible en [molinex-website-apweb](https://github.com/Vanguard-app-web/molinex-website-apweb) |
+| Web Application | No aplica para este AV1 | Fuera de alcance | — |
+| RESTful API | No aplica para este AV1 | Fuera de alcance | — |
+| Swagger UI | No aplica para este AV1 | Fuera de alcance | — |
 
 ![Configuración de despliegue de Molinex](assets/Images%20Chapter%205/webapp-dashboard.png)
 
