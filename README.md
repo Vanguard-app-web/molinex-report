@@ -310,12 +310,25 @@ We’ll know we are successful when users regularly consult the platform, monito
 
 #### 1.2.2.3 Lean UX Hypothesis Statements
 
-_Un Hypothesis Statement por cada Feature Assumption._
+Hypothesis 1: Operational Dashboard
 
-> We believe we will achieve [this business outcome]
-> If [these personas]
-> Attain [this benefit/user outcome]
-> With [this feature or solution]
+We believe we will achieve improved operational decision-making and process visibility If administrators and production supervisors Attain a better understanding of the mill’s performance indicators With a dashboard that displays production performance, waste, and rice quality data.
+
+Hypothesis 2: Lot Management
+
+We believe we will achieve better traceability and control of raw materials If administrators and production supervisors Attain faster access to information about received raw materials and production lots With a lot management module that allows users to register, track, and consult lot information.
+
+Hypothesis 3: Maintenance Management
+
+We believe we will achieve reduced unexpected equipment failures and downtime If maintenance technicians and production supervisors Attain better visibility of equipment conditions and scheduled maintenance activities With a maintenance module that allows users to register maintenance activities and identify possible anomalies.
+
+Hypothesis 4: Intelligent Analysis and Recommendations
+
+We believe we will achieve reduced operational losses and improved production performance If administrators, production supervisors, and maintenance technicians Attain timely information about possible causes of losses and operational problems With an intelligent analysis engine that relates operational data and generates alerts and recommendations.
+
+Hypothesis 5: Subscription Plans
+
+We believe we will achieve customer acquisition and recurring revenue If owners and administrators of small, medium-sized, and large rice mills Attain access to functionalities that match their operational needs and available resources With differentiated Basic, Professional, and Enterprise subscription plans.
 
 #### 1.2.2.4 Lean UX Canvas
 
@@ -332,8 +345,21 @@ _Un Hypothesis Statement por cada Feature Assumption._
 
 ## 1.3 Segmentos objetivo
 
-[Descripción de cada segmento: características demográficas e información estadística de sustento.]
+Molinex estará dirigida a tres segmentos principales dentro de los molinos de arroz: gerentes o administradores, técnicos de mantenimiento y operarios de maquinaria y producción. Estos perfiles fueron seleccionados porque participan directamente en la gestión, supervisión y ejecución de las actividades del proceso productivo.
 
+**Segmento 1: Gerentes o administradores**
+
+Los gerentes o administradores, necesitan controlar indicadores como el rendimiento, la merma, la calidad y los costos de producción. Este segmento representa a los responsables de los molinos de arroz pequeños, medianos y grandes que toman decisiones sobre la eficiencia y rentabilidad del negocio. La importancia de este grupo se relaciona con la presencia de numerosos establecimientos dedicados al procesamiento de arroz en las principales zonas productoras del Perú, según información del INEI y MIDAGRI.
+
+**Segmento 2: Técnicos de mantenimiento**
+
+Los técnicos de mantenimiento son responsables de inspeccionar, conservar y reparar las máquinas utilizadas en el procesamiento del arroz. Este segmento está conformado por técnicos, supervisores y encargados del mantenimiento industrial, quienes requieren registrar actividades, consultar el historial de los equipos y detectar posibles fallas. Su participación resulta relevante debido a que la industria manufacturera y agroindustrial requiere personal técnico para garantizar la continuidad y seguridad de sus operaciones.
+
+**Segmento 3: Operarios de maquinaria y producción**
+
+Los operarios de maquinaria y producción participan directamente en actividades como la recepción de materia prima, procesamiento, supervisión de máquinas y control de la producción. Este segmento incluye a los trabajadores encargados de ejecutar y registrar las actividades operativas del molino. Su importancia se sustenta en que el procesamiento de arroz forma parte de la actividad agroindustrial peruana y requiere personal para operar y supervisar las distintas etapas de producción.
+
+En conjunto, estos segmentos permitirán que Molinex atienda las necesidades de gestión, mantenimiento y operación, facilitando el intercambio de información entre las diferentes áreas del molino.
 <div style="page-break-after: always;"></div>
 
 # Capítulo II Requirements Elicitation & Analysis
@@ -344,53 +370,167 @@ _Un Hypothesis Statement por cada Feature Assumption._
 
 **Competitive Analysis Landscape**
 
-¿Por qué llevar a cabo este análisis? [ ]
+El análisis competitivo permite identificar las empresas, plataformas y alternativas que atienden necesidades relacionadas con la gestión de operaciones, producción, mantenimiento, trazabilidad y digitalización de empresas agroindustriales en el mercado peruano.
 
-| Perfil | Molinex (Vanguard) | Competidor 1 | Competidor 2 | Competidor 3 |
+En el caso de Molinex, este análisis permite conocer qué soluciones ofrecen actualmente funcionalidades similares, reconocer sus fortalezas y limitaciones, y determinar oportunidades de diferenciación.
+
+| Perfil | Molinex (Vanguard) | Nisira | TGI Perú | IBAO |
 |:--|:--|:--|:--|:--|
-| Overview | | | | |
-| Ventaja competitiva | | | | |
-| ¿Qué valor ofrece a los clientes? | | | | |
-| Mercado objetivo | | | | |
-| Estrategias de marketing | | | | |
-| Productos y servicios | | | | |
-| Precios y costos | | | | |
-| Canales de distribución (Web y/o Móvil) | | | | |
+| Overview | Startup peruana que desarrolla una plataforma SaaS para la gestión operativa y el análisis inteligente de información en molinos de arroz. Integra datos de materia prima, lotes, producción, calidad y mantenimiento. | Empresa de tecnología que ofrece soluciones ERP para la gestión empresarial y agroindustrial. Su plataforma permite integrar procesos productivos, administrativos, logísticos y de trazabilidad. | Empresa peruana que desarrolla software industrial y soluciones tecnológicas a medida para monitorear y optimizar procesos productivos. | Empresa peruana que desarrolla soluciones tecnológicas para el sector agroindustrial, incluyendo software, IoT, monitoreo y trazabilidad. |
+| Ventaja competitiva | Especialización en molinos de arroz, integración de distintas áreas operativas, análisis de indicadores, alertas y recomendaciones inteligentes, y planes de suscripción diferenciados. | Integración de diferentes áreas de la empresa mediante una solución ERP, con funcionalidades orientadas a la gestión agroindustrial, producción, trazabilidad y control de operaciones. | Capacidad de desarrollar soluciones industriales personalizadas e integrar indicadores de producción, mantenimiento y operación. | Experiencia en digitalización agroindustrial, monitoreo de variables y uso de tecnologías IoT. |
+| ¿Qué valor ofrece a los clientes? | Centraliza información, facilita el control de producción y calidad, permite analizar rendimiento y merma, ayuda a detectar anomalías y facilita la toma de decisiones. | Permite centralizar y controlar los procesos empresariales y agroindustriales, mejorar la trazabilidad, organizar la producción y disponer de información integrada para la toma de decisiones. | Permite monitorear procesos industriales, controlar indicadores y mejorar la eficiencia de las operaciones. | Permite digitalizar procesos agroindustriales, monitorear variables y centralizar información operativa. |
+| Mercado objetivo | Molinos de arroz pequeños, medianos y grandes en Perú. Sus usuarios principales son gerentes, administradores, técnicos de mantenimiento y responsables de producción. | Empresas agroindustriales y organizaciones que necesitan gestionar procesos productivos, administrativos, logísticos, comerciales y de trazabilidad. | Empresas industriales y organizaciones que necesitan soluciones de producción, mantenimiento, trazabilidad y gestión de recursos. | Empresas agroindustriales que buscan digitalizar procesos, monitorear variables y gestionar información operativa. |
+| Estrategias de marketing | Marketing digital, demostraciones del producto, contacto directo con molinos, alianzas con empresas agroindustriales y ofrecimiento de planes de suscripción. | Presentación de sus soluciones ERP mediante su página web, demostraciones comerciales, contacto directo, asesoría e implementación personalizada. | Promoción de servicios mediante su página web, presentación de casos o soluciones y contacto comercial para proyectos personalizados. | Promoción de soluciones tecnológicas mediante su página web, presentación de servicios y contacto con empresas agroindustriales. |
+| Productos y servicios | Plataforma SaaS para gestión de lotes, producción, calidad, rendimiento, merma, mantenimiento, alertas y recomendaciones inteligentes. | Soluciones ERP para la gestión empresarial y agroindustrial, incluyendo producción, trazabilidad, inventarios, logística, calidad, procesos administrativos y aplicaciones móviles. | Software industrial, dashboards, indicadores de producción, OEE, planificación de fabricación, trazabilidad y gestión de recursos. | Software como servicio, soluciones IoT, monitoreo de temperatura y humedad, trazabilidad, centralización de información e integración mediante API. |
+| Precios y costos | Tres planes de suscripción: Básico, Profesional y Empresarial. El precio dependerá del tamaño del molino y de las funcionalidades contratadas. | No se identifica una tarifa pública general. El costo dependería de los módulos, usuarios, implementación, personalización y soporte contratado. | El precio normalmente depende del alcance, nivel de personalización, implementación e integración requerida. | El costo puede variar según el tipo de solución, dispositivos, sensores, implementación e integraciones necesarias. |
+| Canales de distribución (Web y/o Móvil) | Plataforma web SaaS accesible desde computadoras, tablets y dispositivos móviles mediante navegador. | Plataforma ERP y aplicaciones móviles para la consulta, registro y gestión de información empresarial y operativa. | Soluciones digitales implementadas de acuerdo con las necesidades del cliente. | Plataformas digitales, soluciones web, dispositivos IoT e integraciones tecnológicas. |
 
 **Análisis SWOT**
 
-| | Molinex (Vanguard) | Competidor 1 | Competidor 2 | Competidor 3 |
+| | Molinex (Vanguard) | Nisira | TGI Perú | IBAO |
 |:--|:--|:--|:--|:--|
-| Fortalezas | | | | |
-| Debilidades | | | | |
-| Oportunidades | | | | |
-| Amenazas | | | | |
-
+| **Fortalezas** | Especialización en molinos de arroz; integración de producción, calidad, mantenimiento y rendimiento; análisis de datos; alertas y recomendaciones; planes de suscripción diferenciados. | Experiencia en soluciones ERP; integración de procesos empresariales y agroindustriales; funcionalidades de producción, trazabilidad, inventarios y gestión operativa. | Experiencia en software industrial; capacidad de personalización; conocimiento de indicadores productivos y mantenimiento. | Enfoque agroindustrial; experiencia en IoT, monitoreo de variables y digitalización de procesos. |
+| **Debilidades** | Startup nueva en el mercado; limitada experiencia comercial; necesidad de validar el producto con molinos reales; dependencia de la calidad de los datos registrados. | Su solución tiene un alcance amplio y puede requerir configuración, capacitación e implementación especializada para adaptarse a las necesidades particulares de un molino de arroz. | Sus soluciones pueden requerir mayor inversión, tiempo de implementación y personal especializado; no está enfocada exclusivamente en molinos de arroz. | Su propuesta está dirigida al sector agroindustrial en general y puede requerir adaptaciones para cubrir las necesidades específicas de un molino de arroz. |
+| **Oportunidades** | Crecimiento de la digitalización agroindustrial en Perú; necesidad de mejorar el rendimiento y reducir mermas; interés por el mantenimiento preventivo y predictivo; posibilidad de atender molinos pequeños y medianos con planes accesibles. | Incorporar analítica avanzada, inteligencia artificial y funcionalidades especializadas para plantas de procesamiento y molinos de arroz. | Expandir sus soluciones hacia el sector molinero y desarrollar productos especializados para empresas agroindustriales. | Integrar nuevas funcionalidades de análisis de producción, mantenimiento y optimización para empresas agroindustriales. |
+| **Amenazas** | Dependencia de la disponibilidad y calidad de los datos: El funcionamiento de las capacidades de análisis y predicción de Molinex dependerá de que los molinos dispongan de información suficiente, confiable y actualizada sobre sus procesos, máquinas y producción. La falta de datos o registros incompletos podría limitar la precisión de los análisis y recomendaciones de la plataforma. | Competencia de otros ERP agroindustriales, soluciones especializadas y sistemas propios desarrollados por las empresas. | Competencia de empresas de software industrial nacionales e internacionales y posibles soluciones internas de las empresas. | Competencia de proveedores IoT, empresas de software agroindustrial y fabricantes de maquinaria que incorporen plataformas digitales propias. |
 ### 2.1.2 Estrategias y tácticas frente a competidores
 
 | Estrategia | Tácticas de Molinex |
 |:--|:--|
-| | |
+|Diferenciación por Especialización Operativa|Enfocarse exclusivamente en molinos de arroz, a diferencia de Nisira, TGI Perú e IBAO, que atienden al sector agroindustrial o industrial en general. Comunicar casos de uso específicos del proceso molinero (descascarado, pulido, selección) en lugar de un discurso genérico de "gestión agroindustrial".|
+|Mantenimiento Predictivo como Diferenciador|Posicionar el módulo de alertas y recomendaciones inteligentes como eje central de la propuesta, respaldado en los hallazgos del diagnóstico de campo (fallas por desgaste, dependencia de calendarios fijos, sensores solo en algunas máquinas), ya que ningún competidor lo destaca como su principal valor.|
+|Precio Accesible y Escalable|Ofrecer planes de suscripción diferenciados (Básico, Profesional, Empresarial) frente a la falta de tarifas públicas de la competencia, priorizando molinos pequeños y medianos con menor capacidad de inversión en implementaciones a medida.|
+|Validación y Confianza|Mitigar la debilidad de ser una startup nueva usando el caso piloto en Molinex y las entrevistas con técnicos e ingenieros de producción como evidencia real de validación temprana del producto.|
+|Accesibilidad Multiplataforma|Distribuir la solución como plataforma web SaaS accesible desde computadoras, tablets y móviles, sin requerir instalación de infraestructura IoT compleja, a diferencia de las soluciones a medida de TGI Perú e IBAO.|
+
 
 ## 2.2 Entrevistas
 
 ### 2.2.1 Diseño de entrevistas
 
-| Segmento / Rol | Criterio de selección | Propósito |
-|:--|:--|:--|
-| | | |
+| Segmento | Rol | Criterio de selección | Propósito |
+|---|---|---|---|
+| Segmento 1 | Gerentes o administradores de molinos de arroz | Personas responsables de la gestión general del molino, la supervisión de la producción, el control de costos y la toma de decisiones. | Identificar problemas administrativos, costos, pérdidas, control del rendimiento, necesidades de información y dificultades relacionadas con el estado de la maquinaria. |
+| Segmento 2 | Técnicos de mantenimiento | Personal encargado de realizar mantenimientos preventivos y correctivos, diagnosticar fallas y reparar las máquinas del molino. | Conocer las fallas más frecuentes, la forma en que registran los mantenimientos, los tiempos de reparación y las funciones necesarias para mejorar la gestión del mantenimiento. |
+| Segmento 3 | Operarios de maquinaria y producción | Trabajadores que utilizan diariamente las máquinas y participan directamente en los procesos de producción del molino. | Comprender las dificultades que enfrentan durante sus actividades, la forma en que reportan anomalías, el impacto de las paradas y las características que debería tener un sistema fácil y seguro de utilizar. |
 
 **Guion:**
 
-1. [ ]
+1.**Guion de entrevista: Gerentes o administradores**
+
+**Presentación**
+
+Buenos días/tardes. Somos estudiantes de Ingeniería de Software y estamos realizando una investigación para conocer las necesidades y dificultades que se presentan en la gestión de los molinos de arroz.
+
+El objetivo de esta entrevista es comprender cómo se administran actualmente los procesos de producción, mantenimiento y control de información, con la finalidad de identificar oportunidades de mejora mediante una solución tecnológica.
+
+
+
+**Preguntas**
+
+1. ¿Cuáles son los principales problemas en la administración del molino?
+
+2. ¿Qué procesos generan mayores costos o pérdidas?
+
+3. ¿Cómo controlan actualmente la producción y el rendimiento?
+
+4. ¿Qué información necesitan para tomar decisiones?
+
+5. ¿Qué dificultades tienen para conocer el estado de las máquinas?
+
+6. ¿Cómo afectan las fallas de maquinaria a la producción?
+
+7. ¿Qué características debería tener una solución tecnológica?
+
+**Cierre**
+
+Muchas gracias por su tiempo y por compartir su experiencia. La información brindada será utilizada únicamente con fines académicos para comprender mejor las necesidades del sector y diseñar una propuesta tecnológica adecuada.
+
+2.**Guion de entrevista: Técnicos de mantenimiento**
+
+**Presentación**
+
+Buenos días/tardes. Somos estudiantes de Ingeniería de Software y estamos realizando una investigación para conocer cómo se gestionan las actividades de mantenimiento y reparación de maquinaria en los molinos de arroz.
+
+El objetivo de esta entrevista es comprender las fallas más frecuentes, los procesos de mantenimiento y las dificultades que enfrentan los técnicos, con la finalidad de identificar oportunidades de mejora mediante una solución tecnológica.
+
+
+
+**Preguntas**
+
+1. ¿Cuáles son las fallas más frecuentes en las máquinas?
+
+2. ¿Cómo registran actualmente los mantenimientos realizados?
+
+3. ¿Realizan mantenimiento preventivo? ¿Con qué frecuencia?
+
+4. ¿Cómo reciben los avisos de fallas o problemas?
+
+5. ¿Qué información necesitan para atender una avería?
+
+6. ¿Cuánto tiempo suele tomar reparar una máquina?
+
+7. ¿Qué funciones debería incluir un sistema de mantenimiento?
+
+**Cierre**
+
+Muchas gracias por su tiempo y por compartir su experiencia. La información brindada será utilizada únicamente con fines académicos para comprender mejor las necesidades del área de mantenimiento y diseñar una propuesta tecnológica adecuada.
+
+3. **Guion de entrevista: Operarios de maquinaria y producción**
+
+**Presentación**
+
+Buenos días/tardes. Somos estudiantes de Ingeniería de Software y estamos realizando una investigación para conocer la experiencia de los operarios durante los procesos de producción en los molinos de arroz.
+
+El objetivo de esta entrevista es comprender las dificultades que enfrentan al utilizar las máquinas, la forma en que reportan fallas y las necesidades que tienen para realizar su trabajo de manera más eficiente y segura.
+
+
+
+**Preguntas**
+
+1. ¿Qué máquinas utilizan diariamente?
+
+2. ¿Qué problemas encuentran durante el trabajo?
+
+3. ¿Cómo reportan una falla o anomalía?
+
+4. ¿Han tenido dificultades por falta de capacitación?
+
+5. ¿Qué ocurre cuando una máquina se detiene?
+
+6. ¿Qué información les ayudaría a trabajar mejor?
+
+7. ¿Qué tan fácil debería ser usar el sistema?
+
+8. ¿Qué medidas de seguridad deben considerarse?
+
+**Cierre**
+
+Muchas gracias por su tiempo y por compartir su experiencia. La información brindada será utilizada únicamente con fines académicos para comprender mejor las necesidades de los operarios y diseñar una propuesta tecnológica adecuada.
 
 ### 2.2.2 Registro de entrevistas
 
-[Por cada entrevista: nombre, apellido, edad, distrito, screenshot, enlace en Microsoft Stream, timing/duración y resumen descriptivo. 3 a 5 entrevistas por segmento.]
+|Nombre y apellido	 | Contexto | Distrito | Segmento | Duración |Resumen descriptivo|Screenshot|Link|
+|:---|:--|:--|:--|:----|:----|:--|:--|
+|Jackeline Estrella León Berrocal |26 años |Piura|Segmento1: Gerentes o administradores| 0:00 - 6:20|Jackeline Estrella León Berrocal, de 26 años, señaló que los molinos enfrentan problemas por la falta de monitoreo en tiempo real, pérdidas de arroz y fallas de maquinaria. Considera necesario implementar una solución como Molinex para monitorear procesos, prevenir fallas y reducir pérdidas.| ![Entrevista1-Jacky.jpeg](assets/Screenshot%20of%20the%20interview/Entrevista1-Jacky.jpeg)|https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420031_upc_edu_pe/IQC0KNSr8pYrQ7bDyXmh9IRCAfutJgxPHGtcYY1l51bef4s?e=oa7HYB|
+|Ismael Sandoval Sandoval| 32 años|Piura|Segmento 2: Técnicos de mantenimiento|6:20 - 10:54 |Técnico con 10 años de experiencia que identifica como principales fallas el desgaste mecánico, problemas eléctricos y mala lubricación. Actualmente, los reportes son manuales y algunos equipos cuentan con sensores. Propone un sistema que permita monitorear las máquinas, detectar paradas y reducir costos de mantenimiento.|![Entrevista2-Ismael.png](assets/Screenshot%20of%20the%20interview/Entrevista2-Ismael.png)|https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420031_upc_edu_pe/IQC0KNSr8pYrQ7bDyXmh9IRCAfutJgxPHGtcYY1l51bef4s?e=oa7HYB|
+|Diego Rantería Saavedra|34 años| Piura|Segmento 3:Operarios de maquinaria y producción|10:54 - 30:21 | Ingeniero agroindustrial (Universidad Nacional de Piura), 5 años en la industria arrocera. Describe el proceso completo (elevadores, descascaradoras, padi, conos pulidores, Rotex, selectora, envasado). Señala cortes eléctricos, desgaste de fajas/rodamientos y fallas en la cámara óptica de la selectora como problemas frecuentes. El reporte de fallas es informal (olor, sonido, atascos visibles). El mantenimiento preventivo se basa en calendarios fijos por horas de uso, no en monitoreo en tiempo real.|![Entrevista3-Diego.png](assets/Screenshot%20of%20the%20interview/Entrevista3-Diego.png)|https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420031_upc_edu_pe/IQC0KNSr8pYrQ7bDyXmh9IRCAfutJgxPHGtcYY1l51bef4s?e=oa7HYB|
+
 
 ### 2.2.3 Análisis de entrevistas
 
-[Análisis con sustento estadístico por segmento, a partir de las entrevistas registradas.]
+Segmento 1: Gerentes o administradores
+
+Jackeline León Berrocal, gerenta de un molino en Piura, menciona seis problemas concretos en la entrevista. Dos de ellos (33%) apuntan a la falta de visibilidad y monitoreo en tiempo real: no puede detectar ineficiencias a tiempo ni conocer el estado de las máquinas sin depender de revisiones físicas o de técnicos externos. Otro 33% se relaciona con pérdidas económicas directas: el arroz quebrado, que reduce el valor comercial del producto, y las paradas de maquinaria, que detienen por completo la línea de producción. El 17% restante corresponde al uso de registros manuales (cuadernos y hojas de Excel) que dificultan identificar pérdidas y fallas con rapidez, y otro 17% a la falta de indicadores claros de rendimiento, como el porcentaje de arroz entero y quebrado y la merma por lote. Sobre la solución que busca, pide específicamente una plataforma intuitiva que permita monitorear procesos, analizar datos y recibir recomendaciones para prevenir fallas y reducir mermas.
+
+Segmento 2: Técnicos de mantenimiento
+
+Ismael Sandoval, técnico con 10 años de experiencia en mantenimiento de molinos, identifica cuatro causas de falla como las más comunes en su día a día: problemas de lubricación, desgaste mecánico, fallas eléctricas y desalineación de componentes (25% cada una, sobre el total de causas que menciona en la entrevista). El registro de mantenimiento sigue un flujo manual: primero un reporte en papel, luego se pasa a Excel y finalmente al sistema interno de la empresa. El monitoreo automatizado es parcial: solo hay sensores de temperatura, vibración y relés térmicos en algunas máquinas, no en todo el parque de equipos. El tiempo de reparación va desde minutos hasta semanas según la gravedad de la falla; cuando se necesita un especialista externo, este suele venir de Chiclayo o Pacasmayo. Estos datos respaldan la necesidad de centralizar el registro de fallas y extender el monitoreo por sensores a las máquinas que hoy no lo tienen.
+
+Segmento 3: Operarios de maquinaria y producción
+
+Diego Rantería, egresado de Ingeniería Agroindustrial con 5 años en la industria arrocera, describe el proceso completo del molino: elevadores, descascaradoras, máquina padi, conos pulidores, Rotex, selectora y envasado. Sobre fallas, menciona cuatro tipos: cortes eléctricos, desgaste de elementos móviles (chumaceras, rodamientos, rodajes), ruptura de fajas de transmisión y fallas en la cámara de la máquina selectora. De estos, marca los cortes eléctricos como el más frecuente; el 75% restante (desgaste de piezas móviles, ruptura de fajas y fallas de la selectora) lo describe como esporádico, con una ocurrencia aproximada de una vez al mes o menos. El mantenimiento sigue un calendario preventivo por tiempo de uso: las fajas se cambian cada 3 meses, los rodillos descascaradores cada 72 horas de trabajo, algunos rodajes cada 3 a 5 años, y el aceite de los motorreductores cada 6 meses. La resolución de fallas imprevistas, en cambio, sigue siendo reactiva: los operarios las detectan por indicios informales (olor a caucho quemado, silbidos, atascos en los elevadores), y cuando la falla requiere conocimientos eléctricos o electrónicos especializados, el molino depende de técnicos externos de Chiclayo o Trujillo, porque ese tipo de capacitación no está cubierta internamente.
+
 
 ## 2.3 Needfinding
 
