@@ -63,13 +63,34 @@ Proyecto<br>
 
 | Versión | Fecha | Autor | Descripción de la modificación |
 |:--:|:--:|:--|:--|
-| AV1 | [fecha] | [autor(es)] | [describir qué se agregó/cambió en esta versión] |
-
-<div style="page-break-after: always;"></div>
+| AV1 |  |  ||
+|0.1|14/09|Luisa Casalino|Desarrolle los segmentos objetivos y el análisis competitivo de Molinex.|
+|0.2|14/09|Antony Jimenez|descripción inicial de la startup y se configuró la estructura inicial del proyecto.|
+|0.3|15/09|Brayan Huerta|Se realizaron correcciones y actualizaciones relacionadas con la descripción de la startup, perfiles del equipo y análisis de entrevistas.|
+|0.4|16/09|Antony Jimenez Saavedra|Se incorporo el registro de entrevistas, análisis de entrevistas y User Task Matrix.|
+|0.5|16/09|Luisa Nhiriel Casalino|Se agregaron User Person, User Journey Map, Empathy Mapping y Ubiquitous Language.|
+|0.6|17/09|Antony Jimenez Saavedra|Se actualizaron los perfiles de los integrantes y se incorporaron evidencias adicionales del proyecto.|
+|0.7|17/09|Brayan Huerta|Se realizaron correcciones en hipótesis, perfiles del equipo y análisis de entrevistas.|
+|0.8|17/09|Fabricio Rivera|Se incorporaron Style Guidelines, Information Architecture, Big Picture Event Storming, Design-Level Event Storming, arquitectura de software y diagramas de clases.|
+|0.9|18/09|Fabricio Rivera|Se agregó el diagrama de base de datos y se completaron elementos del diseño técnico.|
+|1.0|18/09|Giovanni Gallegos|Se agregaron los wireflows, wireframes, prototipo de aplicación web y evidencias de la Landing Page.|
+|1.1|19/09|Giovanni Gallegos|Se completaron las secciones del informe correspondientes a AV1 y se agregaron evidencias.|
+|1.2|19/09|Equipo Vanguard|Consolidación y revisión de las secciones del informe correspondientes a la evaluación AV1.|<div style="page-break-after: always;"></div>
 
 ## Project Report Collaboration Insights
 
-[Explicar cómo se desarrollan las actividades de elaboración del informe. Esta sección se expande en cada entrega.]
+## AV1
+
+Para el desarrollo del informe perteneciente a la entrega TB1, se dividió la implementación de las diferentes secciones y actividades del proyecto Molinex entre los integrantes del equipo. La distribución presentada a continuación se basa en las actividades registradas mediante ramas y commits en el repositorio del proyecto.
+
+| Integrante | Tareas Designadas |
+| --- | --- |
+| **Antony Alexander Jimenez Saavedra** | Registro y análisis de entrevistas, Interview Record, Interview Analysis, User Task Matrix, Lean UX Canvas, Product Backlog, Impact Mapping, Mapping, enlace del Backlog y Sprint Backlog. |
+| **Luisa Nhiriel Casalino Berrocal** | User Person, User Journey Map, Empathy Mapping, Ubiquitous Language, User Stories, Sprint Planning 1, Aspect Leaders and Collaborators y Student Outcome. |
+| **Giovanni Marcelo Gallegos De La Cruz** | Wireframes de la aplicación web, Wireflows, prototipo de aplicación web, evidencias de la Landing Page, documentación de diseño y consolidación de secciones del informe para AV1. |
+| **Brayan Benjamin Huerta Cardenas** | Análisis de la Landing Page, wireframe y mockup de la Landing Page, perfiles de integrantes, correcciones de la descripción de la startup y ajustes del análisis de entrevistas. |
+| **Fabricio Jose Rivera Rupay** | Style Guidelines, Information Architecture, Big Picture Event Storming, Design-Level Event Storming, arquitectura de software, diagramas de clases y diagrama de base de datos. |
+
 
 ### Repositorios del proyecto
 
@@ -80,15 +101,20 @@ Proyecto<br>
 
 ### Entrega AV1
 
-[Resumen de lo avanzado en esta entrega.]
+Durante la entrega AV1 se avanzó en la elaboración y consolidación de los principales artefactos del proyecto Molinex. Se desarrollaron los perfiles de los integrantes, el análisis de entrevistas, User Person, User Journey Map, Empathy Mapping, User Task Matrix, Lean UX Canvas, User Stories, Product Backlog e Impact Mapping. Asimismo, se trabajó en el diseño de la solución mediante Style Guidelines, Information Architecture, Big Picture Event Storming, Design-Level Event Storming, wireframes, wireflows y el prototipo de la aplicación web.
+
+También se desarrollaron elementos relacionados con la arquitectura y el diseño técnico, como el modelo C4, diagramas de clases y diagrama de base de datos. Finalmente, se incorporaron evidencias de la Landing Page, Sprint Planning 1, Sprint Backlog, Aspect Leaders and Collaborators, Student Outcome y demás secciones requeridas para la consolidación del informe de la AV1.
+
+El trabajo se realizó de manera colaborativa mediante ramas y commits en el repositorio, permitiendo integrar los avances de cada integrante en la rama de desarrollo.
+
 
 #### Participación del equipo
 
-- Casalino Berrocal, Luisa Nhiriel: [responsabilidades]
-- Gallegos De La Cruz, Giovanni Marcelo: [responsabilidades]
-- Huerta Cardenas, Brayan Benjamin: [responsabilidades]
-- Jimenez Saavedra, Antony Alexander: [responsabilidades]
-- Rivera Rupay, Fabricio Jose: [responsabilidades]
+- Casalino Berrocal, Luisa Nhiriel
+- Gallegos De La Cruz, Giovanni Marcelo
+- Huerta Cardenas, Brayan Benjamin
+- Jimenez Saavedra, Antony Alexander
+- Rivera Rupay, Fabricio Jose
 
 #### Evidencias de colaboración y commits
 
