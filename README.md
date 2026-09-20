@@ -1556,7 +1556,7 @@ Las interacciones implementadas permiten:
 
 **Enlace al prototipo interactivo en Figma:**
 
-[Ver prototipo interactivo de la Web Application de Molinex](URL_DEL_PROTOTIPO_FIGMA)
+[Ver prototipo interactivo de la Web Application de Molinex](https://www.figma.com/design/QytNXR0eMrUtT5MNpJarbK/Figma-Molinex?node-id=57-3295&p=f&t=Z5oRciQziOFpakae-0)
 
 ![Prototipo general de la Web Application en Figma](assets/Images%20Chapter%204/Web%20app/webapp-prototype-figma.png)
 
@@ -1564,7 +1564,7 @@ Las interacciones implementadas permiten:
 
 **Enlace al video demostrativo en Microsoft Stream:**
 
-[Ver video demostrativo del prototipo](URL_DEL_VIDEO_MICROSOFT_STREAM)
+[Ver video demostrativo del prototipo](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420031_upc_edu_pe/IQAuKZpedDkkTr19h5yiaO6hAbRvnrzfZpqPXLHV-w8nY5E?e=2iIVyT)
 
 ## 4.6 Domain-Driven Software Architecture
 
@@ -2199,4 +2199,6 @@ Vue.js. (s.f.). *Vue.js Guide*. https://vuejs.org/guide/introduction.html
 
 | Entrega | Título | Enlace |
 |:--|:--|:--|
-| AV1 | | |
+| AV1 | Video de exposición del proyecto | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420031_upc_edu_pe/IQDe6HjgK534RoKJUdNr7jlUAeca07gXpLXC7_NkXEK444Y?e=faXkz9) |
+| AV1 | Video de demostración de la Landing Page | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420031_upc_edu_pe/IQBG3ToqxvMbR7DzQq0B5yLIAU1bxtjN3nuWse2Z3NQ_Ik8?e=exijmP) |
+| AV1 | Video del prototipo en Figma | [Ver video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202420031_upc_edu_pe/IQAuKZpedDkkTr19h5yiaO6hAbRvnrzfZpqPXLHV-w8nY5E?e=2iIVyT) |
