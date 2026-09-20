@@ -595,9 +595,22 @@ Diego Rantería, egresado de Ingeniería Agroindustrial con 5 años en la indust
 
 ## 2.5 Ubiquitous Language
 
-| Término (español) | Definición |
-|:--|:--|
-| | |
+El presente glosario reúne los términos y conceptos utilizados en el dominio de los molinos de arroz y en la propuesta de solución Molinex. Su finalidad es establecer un lenguaje común entre los integrantes del equipo, los gerentes o administradores, los técnicos de mantenimiento y los operarios de producción. Los términos se presentan en inglés y, cuando corresponde, incluyen su equivalente en español.
+
+
+| Término | Equivalente en español | Definición |
+|---|---|---|
+| Rice Mill | Molino de arroz | Instalación industrial donde se realizan procesos de recepción, limpieza, descascarado, blanqueado, clasificación y almacenamiento del arroz. |
+| Paddy Rice | Arroz cáscara | Arroz cosechado que conserva su cáscara y que constituye la materia prima principal del proceso de transformación. |
+| Raw Material | Materia prima | Arroz cáscara recibido por el molino para ser procesado. Su cantidad y calidad influyen en el rendimiento final. |
+| Production Batch | Lote de producción | Cantidad de materia prima procesada bajo determinadas condiciones y durante un periodo específico. Permite identificar y dar seguimiento a la producción. |
+| Lot Traceability | Trazabilidad de lotes | Capacidad de seguir el recorrido de un lote desde la recepción de la materia prima hasta su transformación, almacenamiento o despacho. |
+| Production Process | Proceso de producción | Conjunto de actividades mediante las cuales el arroz cáscara es transformado en arroz pilado y otros subproductos. |
+| Rice Milling | Pilado de arroz | Proceso industrial mediante el cual se retira la cáscara y se transforma el arroz cáscara en arroz pilado. |
+| Dehusking | Descascarado | Etapa en la que se retira la cáscara del arroz cáscara para obtener arroz integral. |
+| Whitening | Blanqueado | Proceso mediante el cual se eliminan las capas externas del grano para obtener arroz blanco o pilado. |
+| Polishing | Pulido | Etapa de acabado que mejora la apariencia y limpieza del grano mediante la eliminación de restos de salvado. |
+| Rice Grading | Clasificación del arroz | Proceso de separación del arroz según características como tamaño, calidad y proporción de granos enteros o quebrados. |
 
 <div style="page-break-after: always;"></div>
 
