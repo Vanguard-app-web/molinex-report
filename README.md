@@ -1644,19 +1644,22 @@ Los sistemas externos planificados no constituyen Bounded Contexts. `Operational
 
 ### 4.6.2 Software Architecture Context Diagram
 
-[Context Diagram de C4 Model elaborado en la herramienta indicada (Structurizr).]
+El diagrama de contexto presenta a Molinex como un único sistema de software, muestra los objetivos principales de sus actores e incorpora `Rice Mill Sensor Gateway` y `Notification Delivery Service` como integraciones externas planificadas. No expone decisiones internas de implementación.
 
 <p align="center">
-  <img src="assets/design/context-diagram.png" alt="Software Architecture Context Diagram de Molinex" width="100%">
+  <img src="assets/Images%20Chapter%204/Domain-Driven%20Software%20Architecture/C4%20Model/software-system-context.svg" alt="Software Architecture Context Diagram de Molinex" width="100%">
 </p>
+
+**Figura: Software Architecture Context Diagram de Molinex. Fuente: elaboración propia en Structurizr.**
 
 ### 4.6.3 Software Architecture Container Diagrams
 
-[Container Diagram de C4 Model elaborado en la herramienta indicada (Structurizr).]
 
 <p align="center">
-  <img src="assets/design/container-diagram.png" alt="Software Architecture Container Diagram de Molinex" width="100%">
+  <img src="assets/Images%20Chapter%204/Domain-Driven%20Software%20Architecture/C4%20Model/container-diagram.svg" alt="Software Architecture Container Diagram de Molinex" width="100%">
 </p>
+
+**Figura: Software Architecture Container Diagram de Molinex. Fuente: elaboración propia en Structurizr.**
 
 ### 4.6.4 Software Architecture Components Diagrams
 
