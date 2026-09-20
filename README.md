@@ -805,45 +805,199 @@ _Archivo de diseño en Figma:_ `https://www.figma.com/design/QytNXR0eMrUtT5MNpJa
 
 ### 4.4.1 Web Applications Wireframes
 
-[ ]
+Los wireframes de la Web Application de Molinex representan la estructura y distribución inicial de las principales vistas del sistema. En esta etapa se prioriza la organización de los elementos, la navegación y la ubicación de los componentes principales, sin incluir todavía los detalles visuales definitivos.
 
-<p align="center">
-  <img src="assets/design/webapp-wireframes.png" alt="Wireframes de la Web Application de Molinex" width="100%">
-</p>
+Las vistas representadas corresponden a:
+
+- Summary: resumen general de indicadores y alertas.
+- Operations: gestión de operaciones productivas.
+- Machinery: consulta del estado de la maquinaria.
+- Maintenance: seguimiento de mantenimientos y alertas.
+- Operational Intelligence: revisión de registros y recomendaciones operativas.
+- Reports: consulta de reportes operativos.
+- Users & Permissions: gestión de usuarios y permisos.
+
+![Wireframes de la Web Application de Molinex](assets/Images%20Chapter%204/Web%20app/webapp-wireframes.png)
+
+**Figura:** Wireframes de la Web Application de Molinex. Fuente: elaboración propia.
+
+#### Wireframe de Summary
+
+![Wireframe Summary](assets/Images%20Chapter%204/Web%20app/webapp-summary-wireframe.png)
+
+**Figura:** Wireframe de la vista Summary. Fuente: elaboración propia.
+
+#### Wireframe de Operations
+
+![Wireframe Operations](assets/Images%20Chapter%204/Web%20app/webapp-operations-wireframe.png)
+
+**Figura:** Wireframe de la vista Operations. Fuente: elaboración propia.
+
+#### Wireframe de Machinery
+
+![Wireframe Machinery](assets/Images%20Chapter%204/Web%20app/webapp-machinery-wireframe.png)
+
+**Figura:** Wireframe de la vista Machinery. Fuente: elaboración propia.
+
+#### Wireframe de Maintenance
+
+![Wireframe Maintenance](assets/Images%20Chapter%204/Web%20app/webapp-maintenance-wireframe.png)
+
+**Figura:** Wireframe de la vista Maintenance. Fuente: elaboración propia.
+
+#### Wireframe de Operational Intelligence
+
+![Wireframe Operational Intelligence](assets/Images%20Chapter%204/Web%20app/webapp-intelligence-wireframe.png)
+
+**Figura:** Wireframe de la vista Operational Intelligence. Fuente: elaboración propia.
+
+#### Wireframe de Reports
+
+![Wireframe Reports](assets/Images%20Chapter%204/Web%20app/webapp-reports-wireframe.png)
+
+**Figura:** Wireframe de la vista Reports. Fuente: elaboración propia.
+
+#### Wireframe de Users & Permissions
+
+![Wireframe Users & Permissions](assets/Images%20Chapter%204/Web%20app/webapp-users-wireframe.png)
+
+**Figura:** Wireframe de la vista Users & Permissions. Fuente: elaboración propia.
 
 ### 4.4.2 Web Applications Wireflow Diagrams
 
-[ ]
+Los Wireflow Diagrams representan los recorridos principales de los usuarios dentro de la Web Application de Molinex. Cada flujo muestra las pantallas involucradas y la navegación necesaria para alcanzar un objetivo específico.
 
-<p align="center">
-  <img src="assets/design/webapp-wireflow.png" alt="Wireflow Diagram de la Web Application de Molinex" width="100%">
-</p>
+#### User Goal 1: Revisar el estado general del molino
+
+Como gerente, quiero revisar el estado general del molino para conocer sus principales indicadores operativos, alertas y posibles problemas.
+
+![Wireflow de revisión operativa](assets/Images%20Chapter%204/Web%20app/flow-01-operational-overview.png)
+
+**Figura:** Wireflow para revisar el estado general del molino. Fuente: elaboración propia.
+
+#### User Goal 2: Registrar una operación
+
+Como encargado de operaciones, quiero registrar una operación productiva para mantener actualizada la información del proceso del molino.
+
+![Wireflow de registro de operación](assets/Images%20Chapter%204/Web%20app/flow-02-register-operation.png)
+
+**Figura:** Wireflow para registrar una operación. Fuente: elaboración propia.
+
+#### User Goal 3: Gestionar el mantenimiento
+
+Como técnico de mantenimiento, quiero revisar y registrar actividades de mantenimiento para controlar el estado de los equipos y reducir posibles fallas.
+
+![Wireflow de gestión de mantenimiento](assets/Images%20Chapter%204/Web%20app/flow-03-manage-maintenance.png)
+
+**Figura:** Wireflow para gestionar el mantenimiento de los equipos. Fuente: elaboración propia.
+
+#### User Goal 4: Gestionar usuarios y permisos
+
+Como administrador, quiero gestionar los usuarios y sus permisos para controlar el acceso a las funcionalidades de la plataforma.
+
+![Wireflow de usuarios y permisos](assets/Images%20Chapter%204/Web%20app/flow-04-manage-users.png)
+
+**Figura:** Wireflow para gestionar usuarios y permisos. Fuente: elaboración propia.
 
 ### 4.4.3 Web Applications Mockups
 
-[ ]
+Los mockups de la Web Application representan las principales vistas operativas de Molinex. En estos diseños se aplican los colores, tipografías, componentes visuales y lineamientos definidos para la solución.
 
-<p align="center">
-  <img src="assets/design/webapp-mockups.png" alt="Mockups de la Web Application de Molinex" width="100%">
-</p>
+Las vistas representadas corresponden a:
+
+- Summary.
+- Operations.
+- Machinery.
+- Maintenance.
+- Operational Intelligence.
+- Reports.
+- Users & Permissions.
+
+#### Mockup de Summary
+
+![Mockup Summary](assets/Images%20Chapter%204/Web%20app/webapp-summary.png)
+
+**Figura:** Mockup de la vista Summary. Fuente: elaboración propia.
+
+#### Mockup de Operations
+
+![Mockup Operations](assets/Images%20Chapter%204/Web%20app/webapp-operations.png)
+
+**Figura:** Mockup de la vista Operations. Fuente: elaboración propia.
+
+#### Mockup de Machinery
+
+![Mockup Machinery](assets/Images%20Chapter%204/Web%20app/webapp-machinery.png)
+
+**Figura:** Mockup de la vista Machinery. Fuente: elaboración propia.
+
+#### Mockup de Maintenance
+
+![Mockup Maintenance](assets/Images%20Chapter%204/Web%20app/webapp-maintenance.png)
+
+**Figura:** Mockup de la vista Maintenance. Fuente: elaboración propia.
+
+#### Mockup de Operational Intelligence
+
+![Mockup Operational Intelligence](assets/Images%20Chapter%204/Web%20app/webapp-intelligence.png)
+
+**Figura:** Mockup de la vista Operational Intelligence. Fuente: elaboración propia.
+
+#### Mockup de Reports
+
+![Mockup Reports](assets/Images%20Chapter%204/Web%20app/webapp-reports.png)
+
+**Figura:** Mockup de la vista Reports. Fuente: elaboración propia.
+
+#### Mockup de Users & Permissions
+
+![Mockup Users & Permissions](assets/Images%20Chapter%204/Web%20app/webapp-users.png)
+
+**Figura:** Mockup de la vista Users & Permissions. Fuente: elaboración propia.
 
 ### 4.4.4 Web Applications User Flow Diagrams
 
-[ ]
+El User Flow Diagram representa las decisiones y acciones que puede realizar un usuario dentro de la Web Application de Molinex. El flujo parte del acceso del usuario al sistema y se divide según el objetivo operativo que desea cumplir.
 
-<p align="center">
-  <img src="assets/design/webapp-user-flow.png" alt="User Flow Diagram de la Web Application de Molinex" width="100%">
-</p>
+Los principales recorridos considerados son:
+
+- Revisar las operaciones registradas.
+- Consultar el estado de la maquinaria.
+- Gestionar actividades de mantenimiento.
+- Analizar la inteligencia operativa.
+- Consultar reportes.
+- Administrar usuarios y permisos.
+
+![User Flow Diagram de la Web Application de Molinex](assets/Images%20Chapter%204/Web%20app/webapp-user-flow.png)
+
+**Figura:** User Flow Diagram de la Web Application de Molinex, desde el acceso al sistema hasta las principales acciones operativas. Fuente: elaboración propia.
 
 ## 4.5 Web Applications Prototyping
 
-[Prototipo interactivo en Figma + video demostrativo.]
+Se desarrolló un prototipo interactivo de la Web Application de Molinex en Figma. El prototipo permite navegar entre la vista Summary y los principales módulos operativos de la plataforma.
 
-<p align="center">
-  <img src="assets/design/webapp-prototype.png" alt="Captura del prototipo interactivo en Figma" width="100%">
-</p>
+Las interacciones implementadas permiten:
 
-_Enlace al video demostrativo (Microsoft Stream):_ `[URL]`
+- Acceder al Summary o dashboard principal.
+- Navegar hacia Operations.
+- Consultar Machinery.
+- Acceder a Maintenance.
+- Revisar Operational Intelligence.
+- Consultar Reports.
+- Gestionar Users & Permissions.
+- Regresar al Summary mediante el enlace de retorno.
+
+**Enlace al prototipo interactivo en Figma:**
+
+[Ver prototipo interactivo de la Web Application de Molinex](URL_DEL_PROTOTIPO_FIGMA)
+
+![Prototipo general de la Web Application en Figma](assets/Images%20Chapter%204/Web%20app/webapp-prototype-figma.png)
+
+**Figura:** Vista general del prototipo de la Web Application de Molinex en Figma. Fuente: elaboración propia.
+
+**Enlace al video demostrativo en Microsoft Stream:**
+
+[Ver video demostrativo del prototipo](URL_DEL_VIDEO_MICROSOFT_STREAM)
 
 ## 4.6 Domain-Driven Software Architecture
 
