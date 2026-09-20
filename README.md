@@ -2063,19 +2063,13 @@ A continuación se presenta el cuadro resumen del Sprint Planning Meeting, con e
 
 #### 5.2.1.5 Execution Evidence for Sprint Review
 
-[Capturas de las vistas implementadas + enlace a video.]
+A continuación se muestra la evidencia de ejecución de la Landing Page de Molinex, único componente implementado dentro del alcance de esta entrega (AV1). La evidencia en video de la sustentación se referencia en el Anexo A.
 
 <p align="center">
   <img src="assets/evidence/implemented/landing-desktop.png" alt="Landing Page de Molinex ejecutada en navegador" width="100%">
 </p>
 
-<p align="center">
-  <img src="assets/evidence/implemented/webapp-login.png" alt="Inicio de sesión de la Web Application de Molinex" width="100%">
-</p>
-
-<p align="center">
-  <img src="assets/evidence/implemented/webapp-register.png" alt="Registro de cuenta en la Web Application de Molinex" width="100%">
-</p>
+> Pendiente: agregar la captura `landing-desktop.png` a `assets/evidence/implemented/`.
 
 #### 5.2.1.6 Services Documentation Evidence for Sprint Review
 
