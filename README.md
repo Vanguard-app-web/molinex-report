@@ -1985,11 +1985,11 @@ El equipo gestiona estas ramas mediante la extensión `git-flow` (línea de coma
 
 ### 5.1.4 Software Deployment Configuration
 
-La Landing Page de Molinex se despliega mediante **GitHub Pages**, sirviendo directamente los archivos estáticos (`index.html`, `styles.css`, `script.js`) desde la rama `main` del repositorio [molinex-website-apweb](https://github.com/Vanguard-app-web/molinex-website-apweb).
+La Landing Page de Molinex está desplegada mediante **GitHub Pages**, sirviendo directamente los archivos estáticos (`index.html`, `styles.css`, `script.js`) desde la rama `main` del repositorio [molinex-website-apweb](https://github.com/Vanguard-app-web/molinex-website-apweb).
+
+**URL de despliegue:** [https://vanguard-app-web.github.io/molinex-website-apweb/](https://vanguard-app-web.github.io/molinex-website-apweb/)
 
 El flujo de despliegue sigue el modelo GitFlow: los cambios se integran en `develop` a través de ramas `feature/`, y se publican en producción únicamente al fusionar una rama `release/` hacia `main`, momento en el cual GitHub Pages sirve automáticamente la nueva versión.
-
-> Nota: el repositorio de la Landing Page ya existe en GitHub con el código fuente completo; la activación de GitHub Pages y el primer release (`v0.1.0`) se encuentran en proceso de configuración.
 
 La Web Application y el RESTful API no cuentan con configuración de despliegue en esta entrega, dado que su implementación se definió como fuera del alcance del AV1.
 
@@ -2100,13 +2100,13 @@ A modo de referencia, la siguiente tabla resume las rutas principales previstas 
 
 #### 5.2.1.7 Software Deployment Evidence for Sprint Review
 
-Durante el Sprint 1 se avanzó en la configuración de despliegue de la Landing Page de Molinex, único componente cuyo despliegue forma parte del alcance de esta entrega (AV1). La Web Application y el RESTful API se implementarán y desplegarán en una etapa posterior del proyecto.
+Durante el Sprint 1 se completó la configuración de despliegue de la Landing Page de Molinex, único componente cuyo despliegue forma parte del alcance de esta entrega (AV1). La Web Application y el RESTful API se implementarán y desplegarán en una etapa posterior del proyecto.
 
 La configuración de despliegue permite publicar la Landing Page en su entorno de operación y verificar su disponibilidad pública.
 
 | Componente | Plataforma de despliegue | Estado | URL |
 |:--|:--|:--|:--|
-| Landing Page | GitHub Pages | En proceso de activación | Repositorio disponible en [molinex-website-apweb](https://github.com/Vanguard-app-web/molinex-website-apweb) |
+| Landing Page | GitHub Pages | Desplegado | [https://vanguard-app-web.github.io/molinex-website-apweb/](https://vanguard-app-web.github.io/molinex-website-apweb/) |
 | Web Application | No aplica para este AV1 | Fuera de alcance | — |
 | RESTful API | No aplica para este AV1 | Fuera de alcance | — |
 | Swagger UI | No aplica para este AV1 | Fuera de alcance | — |
