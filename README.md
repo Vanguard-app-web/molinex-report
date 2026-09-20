@@ -397,7 +397,12 @@ En el caso de Molinex, este análisis permite conocer qué soluciones ofrecen ac
 
 | Estrategia | Tácticas de Molinex |
 |:--|:--|
-| | |
+|Diferenciación por Especialización Operativa|Enfocarse exclusivamente en molinos de arroz, a diferencia de Nisira, TGI Perú e IBAO, que atienden al sector agroindustrial o industrial en general. Comunicar casos de uso específicos del proceso molinero (descascarado, pulido, selección) en lugar de un discurso genérico de "gestión agroindustrial".|
+|Mantenimiento Predictivo como Diferenciador|Posicionar el módulo de alertas y recomendaciones inteligentes como eje central de la propuesta, respaldado en los hallazgos del diagnóstico de campo (fallas por desgaste, dependencia de calendarios fijos, sensores solo en algunas máquinas), ya que ningún competidor lo destaca como su principal valor.|
+|Precio Accesible y Escalable|Ofrecer planes de suscripción diferenciados (Básico, Profesional, Empresarial) frente a la falta de tarifas públicas de la competencia, priorizando molinos pequeños y medianos con menor capacidad de inversión en implementaciones a medida.|
+|Validación y Confianza|Mitigar la debilidad de ser una startup nueva usando el caso piloto en Molinex y las entrevistas con técnicos e ingenieros de producción como evidencia real de validación temprana del producto.|
+|Accesibilidad Multiplataforma|Distribuir la solución como plataforma web SaaS accesible desde computadoras, tablets y móviles, sin requerir instalación de infraestructura IoT compleja, a diferencia de las soluciones a medida de TGI Perú e IBAO.|
+
 
 ## 2.2 Entrevistas
 
