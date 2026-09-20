@@ -519,7 +519,18 @@ Muchas gracias por su tiempo y por compartir su experiencia. La información bri
 
 ### 2.2.3 Análisis de entrevistas
 
-[Análisis con sustento estadístico por segmento, a partir de las entrevistas registradas.]
+Segmento 1: Gerentes o administradores
+
+Jackeline León Berrocal, gerenta de un molino en Piura, menciona seis problemas concretos en la entrevista. Dos de ellos (33%) apuntan a la falta de visibilidad y monitoreo en tiempo real: no puede detectar ineficiencias a tiempo ni conocer el estado de las máquinas sin depender de revisiones físicas o de técnicos externos. Otro 33% se relaciona con pérdidas económicas directas: el arroz quebrado, que reduce el valor comercial del producto, y las paradas de maquinaria, que detienen por completo la línea de producción. El 17% restante corresponde al uso de registros manuales (cuadernos y hojas de Excel) que dificultan identificar pérdidas y fallas con rapidez, y otro 17% a la falta de indicadores claros de rendimiento, como el porcentaje de arroz entero y quebrado y la merma por lote. Sobre la solución que busca, pide específicamente una plataforma intuitiva que permita monitorear procesos, analizar datos y recibir recomendaciones para prevenir fallas y reducir mermas.
+
+Segmento 2: Técnicos de mantenimiento
+
+Ismael Sandoval, técnico con 10 años de experiencia en mantenimiento de molinos, identifica cuatro causas de falla como las más comunes en su día a día: problemas de lubricación, desgaste mecánico, fallas eléctricas y desalineación de componentes (25% cada una, sobre el total de causas que menciona en la entrevista). El registro de mantenimiento sigue un flujo manual: primero un reporte en papel, luego se pasa a Excel y finalmente al sistema interno de la empresa. El monitoreo automatizado es parcial: solo hay sensores de temperatura, vibración y relés térmicos en algunas máquinas, no en todo el parque de equipos. El tiempo de reparación va desde minutos hasta semanas según la gravedad de la falla; cuando se necesita un especialista externo, este suele venir de Chiclayo o Pacasmayo. Estos datos respaldan la necesidad de centralizar el registro de fallas y extender el monitoreo por sensores a las máquinas que hoy no lo tienen.
+
+Segmento 3: Operarios de maquinaria y producción
+
+Diego Rantería, egresado de Ingeniería Agroindustrial con 5 años en la industria arrocera, describe el proceso completo del molino: elevadores, descascaradoras, máquina padi, conos pulidores, Rotex, selectora y envasado. Sobre fallas, menciona cuatro tipos: cortes eléctricos, desgaste de elementos móviles (chumaceras, rodamientos, rodajes), ruptura de fajas de transmisión y fallas en la cámara de la máquina selectora. De estos, marca los cortes eléctricos como el más frecuente; el 75% restante (desgaste de piezas móviles, ruptura de fajas y fallas de la selectora) lo describe como esporádico, con una ocurrencia aproximada de una vez al mes o menos. El mantenimiento sigue un calendario preventivo por tiempo de uso: las fajas se cambian cada 3 meses, los rodillos descascaradores cada 72 horas de trabajo, algunos rodajes cada 3 a 5 años, y el aceite de los motorreductores cada 6 meses. La resolución de fallas imprevistas, en cambio, sigue siendo reactiva: los operarios las detectan por indicios informales (olor a caucho quemado, silbidos, atascos en los elevadores), y cuando la falla requiere conocimientos eléctricos o electrónicos especializados, el molino depende de técnicos externos de Chiclayo o Trujillo, porque ese tipo de capacitación no está cubierta internamente.
+
 
 ## 2.3 Needfinding
 
