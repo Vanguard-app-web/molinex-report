@@ -118,7 +118,7 @@ El trabajo se realizó de manera colaborativa mediante ramas y commits en el rep
 
 #### Evidencias de colaboración y commits
 
-[Capturas de GitHub Insights y tabla de commits por repositorio.]
+El equipo gestionó el desarrollo del informe mediante ramas de GitHub bajo el modelo GitFlow, con una rama `feature/` por cada sección y su posterior integración en `develop` mediante `git flow feature finish`. La evidencia visual de las ramas utilizadas, el historial de commits y los GitHub Insights del repositorio se presenta en la sección 5.2.1.8 (Team Collaboration Insights during Sprint).
 
 <div style="page-break-after: always;"></div>
 
@@ -2059,7 +2059,17 @@ A continuación se presenta el cuadro resumen del Sprint Planning Meeting, con e
 
 #### 5.2.1.4 Development Evidence for Sprint Review
 
-[Tabla de commits por repositorio: Repository, Branch, Commit Id, Commit Message, Commit Message Body, Commited on.]
+La siguiente tabla presenta los commits del repositorio de la Landing Page ([molinex-website-apweb](https://github.com/Vanguard-app-web/molinex-website-apweb)), único producto implementado dentro del alcance de esta entrega (AV1). Los repositorios de la Web Application y el RESTful API aún no se han creado, ya que su desarrollo no forma parte del alcance de este AV1.
+
+| Repository | Branch | Commit Id | Commit Message | Commited on |
+|:--|:--|:--|:--|:--|
+| molinex-website-apweb | main | `20e792e` | chore: initial commit | 2026-09-20 |
+| molinex-website-apweb | develop | `e5726ae` | feat: add landing page markup structure | 2026-09-20 |
+| molinex-website-apweb | feature/landing-page-branding | `74b26cd` | feat: add base landing page styles | 2026-09-20 |
+| molinex-website-apweb | feature/landing-page-branding | `76b6491` | feat: add Molinex brand assets | 2026-09-20 |
+| molinex-website-apweb | feature/landing-page-branding | `bd91e64` | feat(landing): align page content with product report requirements | 2026-09-20 |
+
+> Nota: al cierre de esta sección, la rama `feature/landing-page-branding` se encuentra aún en desarrollo y pendiente de fusionar a `develop`.
 
 #### 5.2.1.5 Execution Evidence for Sprint Review
 
@@ -2073,13 +2083,9 @@ A continuación se muestra la evidencia de ejecución de la Landing Page de Moli
 
 #### 5.2.1.6 Services Documentation Evidence for Sprint Review
 
-Durante el Sprint 1 se documentaron las rutas principales del RESTful API de Molinex mediante Swagger UI. Esta documentación permite visualizar los endpoints disponibles, los métodos HTTP utilizados, los parámetros requeridos y las respuestas esperadas de cada servicio.
+La documentación del RESTful API mediante Swagger UI, así como su despliegue, no forman parte del alcance de esta entrega (AV1), dado que la implementación de la Web Application y el RESTful API se realizará en una etapa posterior del proyecto.
 
-La documentación de los servicios facilita la validación y posterior integración entre la Web Application y el RESTful API.
-
-**URL de Swagger UI:**
-
-[Swagger UI del RESTful API de Molinex](URL_SWAGGER_UI)
+A modo de referencia, la siguiente tabla resume las rutas principales previstas para el RESTful API, definidas a partir del diseño de la arquitectura (ver Capítulo IV):
 
 | Contexto | Rutas principales |
 |:--|:--|
@@ -2090,7 +2096,7 @@ La documentación de los servicios facilita la validación y posterior integraci
 | Mantenimiento | `GET /api/maintenance`<br>`GET /api/maintenance/{id}`<br>`POST /api/maintenance` |
 | Reportes | `GET /api/reports`<br>`GET /api/reports/{id}` |
 
-> Nota: Las rutas deben coincidir con los endpoints realmente implementados en el RESTful API. Si alguna ruta todavía no se encuentra disponible, deberá eliminarse de la tabla o marcarse como pendiente.
+> Nota: estas rutas corresponden al diseño de la API y se validarán con Swagger UI una vez implementado el RESTful API.
 
 #### 5.2.1.7 Software Deployment Evidence for Sprint Review
 
@@ -2140,13 +2146,50 @@ Las ramas utilizadas siguieron las siguientes convenciones:
 
 ## Conclusiones y recomendaciones
 
-[ ]
+Durante el AV1, el equipo de Molinex consolidó las bases estratégicas, de diseño y de arquitectura del proyecto. Se completó el análisis del problema y del mercado (entrevistas, análisis competitivo, Lean UX Canvas), la investigación de usuarios (User Personas, Empathy Mapping, User Journey Mapping, User Task Matrix), la definición del producto (Product Backlog, Impact Mapping, User Stories) y el diseño de la solución (Style Guidelines, Information Architecture, Big Picture y Design-Level EventStorming, wireframes, wireflows y prototipos de la Landing Page y la Web Application). A nivel técnico, se definió la arquitectura de software mediante el modelo C4 (diagramas de contexto, contenedores y componentes), el diagrama de clases y el diseño de la base de datos relacional en MySQL.
+
+En la fase de implementación, el equipo priorizó el desarrollo y despliegue de la Landing Page de Molinex, componente definido como alcance de esta entrega, mientras que la Web Application y el RESTful API quedaron diseñados y documentados para su implementación en una etapa posterior. El trabajo se organizó mediante Git y GitHub bajo el modelo GitFlow, con ramas `feature/` por cada artefacto y mensajes de commit siguiendo la convención Conventional Commits, lo que permitió una colaboración ordenada entre los cinco integrantes del equipo.
+
+Como recomendaciones para las siguientes entregas, el equipo identifica:
+
+- Completar la creación de los repositorios de la Web Application y el RESTful API bajo la organización Vanguard-app-web, replicando la disciplina de GitFlow y Conventional Commits ya aplicada en la Landing Page.
+- Implementar los módulos definidos en el Design-Level EventStorming y el diagrama de clases, validando que la arquitectura de contenedores (Vue + PrimeVue en el frontend, ASP.NET Core + Entity Framework Core en el backend) se mantenga consistente con lo documentado.
+- Desplegar el RESTful API y documentar sus endpoints mediante Swagger UI, verificando que las rutas implementadas coincidan con las diseñadas en la sección 5.2.1.6.
+- Incorporar pruebas de integración entre la Web Application y el RESTful API antes de las siguientes entregas, dado que varias historias de usuario (registro, login, gestión de roles) dependen de esa integración.
 
 <div style="page-break-after: always;"></div>
 
 # Bibliografía
 
-[Referencias en formato APA.]
+Brandolini, A. (2013). *Introducing EventStorming*. https://www.eventstorming.com/
+
+Brown, S. (s.f.). *The C4 model for visualising software architecture*. https://c4model.com/
+
+Conventional Commits. (s.f.). *Conventional Commits 1.0.0*. https://www.conventionalcommits.org/en/v1.0.0/
+
+Driessen, V. (2010, 5 de enero). *A successful Git branching model*. nvie.com. https://nvie.com/posts/a-successful-git-branching-model/
+
+Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley.
+
+Google. (s.f.). *Material Design 3 guidelines*. https://m3.material.io/
+
+Gothelf, J., & Seiden, J. (2016). *Lean UX: Designing Great Products with Agile Teams* (2.ª ed.). O'Reilly Media.
+
+Microsoft. (s.f.). *ASP.NET Core documentation*. https://learn.microsoft.com/aspnet/core
+
+Microsoft. (s.f.). *Entity Framework Core documentation*. https://learn.microsoft.com/ef/core
+
+Oracle. (s.f.). *MySQL 8.0 Reference Manual*. https://dev.mysql.com/doc/refman/8.0/en/
+
+Preston-Werner, T. (2013). *Semantic Versioning 2.0.0*. https://semver.org/
+
+PrimeVue. (s.f.). *PrimeVue documentation*. https://primevue.org/
+
+Structurizr. (s.f.). *Structurizr documentation*. https://structurizr.com/help
+
+Swagger / OpenAPI Initiative. (s.f.). *OpenAPI Specification*. https://swagger.io/specification/
+
+Vue.js. (s.f.). *Vue.js Guide*. https://vuejs.org/guide/introduction.html
 
 <div style="page-break-after: always;"></div> 
 
