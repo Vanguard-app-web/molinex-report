@@ -1148,36 +1148,69 @@ Las interacciones implementadas permiten:
 
 #### 5.2.1.6 Services Documentation Evidence for Sprint Review
 
+Durante el Sprint 1 se documentaron las rutas principales del RESTful API de Molinex mediante Swagger UI. Esta documentación permite visualizar los endpoints disponibles, los métodos HTTP utilizados, los parámetros requeridos y las respuestas esperadas de cada servicio.
+
+La documentación de los servicios facilita la validación y posterior integración entre la Web Application y el RESTful API.
+
+**URL de Swagger UI:**
+
+[Swagger UI del RESTful API de Molinex](URL_SWAGGER_UI)
+
 | Contexto | Rutas principales |
 |:--|:--|
-| | |
+| Autenticación | `GET /api/auth`<br>`POST /api/auth/login` |
+| Usuarios | `GET /api/users`<br>`GET /api/users/{id}`<br>`POST /api/users` |
+| Operaciones | `GET /api/operations`<br>`GET /api/operations/{id}`<br>`POST /api/operations` |
+| Maquinaria | `GET /api/machinery`<br>`GET /api/machinery/{id}` |
+| Mantenimiento | `GET /api/maintenance`<br>`GET /api/maintenance/{id}`<br>`POST /api/maintenance` |
+| Reportes | `GET /api/reports`<br>`GET /api/reports/{id}` |
 
-<p align="center">
-  <img src="assets/evidence/collaboration/swagger-overview.png" alt="Swagger UI del RESTful API de Molinex" width="100%">
-</p>
+> Nota: Las rutas deben coincidir con los endpoints realmente implementados en el RESTful API. Si alguna ruta todavía no se encuentra disponible, deberá eliminarse de la tabla o marcarse como pendiente.
 
 #### 5.2.1.7 Software Deployment Evidence for Sprint Review
 
-[ ]
+Durante el Sprint 1 se configuró el despliegue de los componentes principales de Molinex. La solución está conformada por la Landing Page, la Web Application y el RESTful API.
 
-<p align="center">
-  <img src="assets/evidence/collaboration/deployment-config.png" alt="Configuración de despliegue de Molinex" width="100%">
-</p>
+La configuración de despliegue permite publicar los componentes del sistema en sus respectivos entornos y verificar su disponibilidad para las pruebas de integración.
+
+| Componente | Plataforma de despliegue | Estado | URL |
+|:--|:--|:--|:--|
+| Landing Page | GitHub Pages | Desplegado | [URL de la Landing Page](URL_LANDING_PAGE) |
+| Web Application | Plataforma de despliegue utilizada | Pendiente/Desplegado | [URL de la Web Application](URL_WEB_APPLICATION) |
+| RESTful API | Plataforma de despliegue utilizada | Pendiente/Desplegado | [URL del RESTful API](URL_RESTFUL_API) |
+| Swagger UI | Plataforma de despliegue utilizada | Pendiente/Disponible | [URL de Swagger UI](URL_SWAGGER_UI) |
+
+![Configuración de despliegue de Molinex](assets/Images%20Chapter%205/webapp-dashboard.png)
+
+**Figura:** Configuración de despliegue de los componentes de Molinex. Fuente: elaboración propia.
+
+![Landing Page desplegada](assets/Images%20Chapter%205/landing-deployed.png)
+
+**Figura:** Landing Page de Molinex desplegada en su entorno de operación. Fuente: elaboración propia.
 
 #### 5.2.1.8 Team Collaboration Insights during Sprint
 
-[ ]
+Durante el Sprint 1, el equipo utilizó GitHub como plataforma para organizar el desarrollo colaborativo, administrar las ramas y registrar los aportes de cada integrante.
 
-<p align="center">
-  <img src="assets/evidence/collaboration/github-branches.png" alt="Ramas GitFlow publicadas en GitHub" width="100%">
-</p>
+Se aplicó GitFlow mediante las ramas principales `main` y `develop`, además de ramas específicas para cada funcionalidad desarrollada. Cada feature fue implementado en su propia rama y posteriormente integrado en `develop`.
 
-<p align="center">
-  <img src="assets/evidence/collaboration/github-contributors.png" alt="GitHub Insights Contributors del repositorio" width="100%">
-</p>
+Las ramas utilizadas siguieron las siguientes convenciones:
 
-<div style="page-break-after: always;"></div>
+![Ramas GitFlow publicadas en GitHub](assets/Images%20Chapter%205/github-branches.png)
 
+**Figura:** Ramas GitFlow utilizadas durante el Sprint 1. Fuente: elaboración propia.
+
+![GitHub Commits del repositorio](assets/Images%20Chapter%205/github-commits.png)
+
+**Figura:** Historial de commits del repositorio. Fuente: elaboración propia.
+
+![GitHub Insights Contributors](assets/Images%20Chapter%205/github-contributors.png)
+
+**Figura:** GitHub Insights Contributors del repositorio del proyecto. Fuente: elaboración propia.
+
+![Convenciones de código](assets/Images%20Chapter%205/code-conventions.png)
+
+**Figura:** Convenciones aplicadas durante el desarrollo. Fuente: elaboración propia.
 # Conclusiones
 
 ## Conclusiones y recomendaciones
@@ -1190,7 +1223,7 @@ Las interacciones implementadas permiten:
 
 [Referencias en formato APA.]
 
-<div style="page-break-after: always;"></div>
+<div style="page-break-after: always;"></div> 
 
 # Anexos
 
