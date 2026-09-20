@@ -1,0 +1,9 @@
+# GitHub Linguist misclassifies the generic ".dsl" extension used by our
+# Structurizr architecture-as-code files (workspace.dsl, backend-components.dsl,
+# frontend-components.dsl, relationships.dsl, views.dsl) as "ASL" (Amazon
+# States Language). Since these files make up most of the repository's text
+# content, ASL ends up dominating the "Languages" bar even though this repo
+# contains no ASL code at all. Mark them (and the PlantUML diagram sources)
+# as documentation so GitHub excludes them from language statistics.
+*.dsl linguist-documentation
+*.puml linguist-documentation
