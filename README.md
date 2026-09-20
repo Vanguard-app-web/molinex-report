@@ -1090,20 +1090,24 @@ Las interacciones implementadas permiten:
 
 #### 5.2.1.1 Sprint Planning 1
 
+El Sprint 1 abre el desarrollo de Molinex con dos frentes. El primero es la Landing Page, que presenta a los visitantes la propuesta de valor, las funcionalidades, los beneficios y los planes de suscripción Básico, Profesional y Empresarial, y les permite solicitar información comercial (EP-07). El segundo es la gestión de acceso y usuarios (EP-01), base de seguridad sobre la que se construirán los demás módulos de la plataforma.
+
+A continuación se presenta el cuadro resumen del Sprint Planning Meeting, con el Sprint Goal, el velocity establecido y las historias de usuario comprometidas.
+
 | Sprint # | Sprint 1 |
 |:--|:--|
 | **Sprint Planning Background** | |
-| Date | [ ] |
-| Time | [ ] |
-| Location | [ ] |
-| Prepared By | [ ] |
-| Attendees (to planning meeting) | [ ] |
+| Date | 26-09-02 |
+| Time | 7:00 PM |
+| Location | virtual (videollamada del equipo por Google Meet|
+| Prepared By | Gallegos De La Cruz, Giovanni Marcelo |
+| Attendees (to planning meeting) | Gallegos De La Cruz, Giovanni Marcelo / Casalino Berrocal, Luisa Nhiriel / Huerta Cardenas, Brayan Benjamin / Jimenez Saavedra, Antony Alexander / Rivera Rupay, Fabricio Jose |
 | Sprint n - 1 Review Summary | No aplica (primer Sprint). |
 | Sprint n - 1 Retrospective Summary | No aplica (primer Sprint). |
-| **Sprint Goal & User Stories** | |
-| Sprint 1 Goal | [Our focus is on... We believe it delivers... This will be confirmed when...] |
-| Sprint 1 Velocity | [ ] |
-| Sum of Story Points | [ ] |
+| Sprint 1 Goal | Implementar y desplegar la primera versión de la Landing Page de Molinex, presentando su propuesta de valor, funcionalidades, beneficios y planes de suscripción. También se busca validar la estructura inicial de la Web Application mediante wireframes, mockups y prototipo interactivo. |
+| Sprint 1 Goal | Our focus is on letting prospective mills evaluate Molinex and choose a subscription plan from the landing page, and on giving authorized mill staff role-based access to the platform.We believe it delivers a clearer understanding of Molinex's value, features and plans to the mill owners and administrators who visit the site, and controlled access to operational information to administrators, technicians and operators.This will be confirmed when a visitor can review the value proposition, benefits, features and the Basic, Professional and Enterprise plans and submit a commercial information request in no more than three steps, and when an administrator can register a user and assign a role, and that user can log in, update their profile and is denied access to functionalities outside their role.|
+|Sprint 1 Velocity | 20 Story Points. Primer Sprint sin velocity histórico: se adopta una capacidad conservadora para un equipo de 5 integrantes. |
+|Sum of Story Points | 20 Story Points (US-01 a US-04, US-35 a US-40) |
 
 #### 5.2.1.2 Aspect Leaders and Collaborators
 
