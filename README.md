@@ -565,18 +565,15 @@ Diego Rantería, egresado de Ingeniería Agroindustrial con 5 años en la indust
 
 ### 2.3.4 Empathy Mapping
 
-| Dimensión | Persona 1 | Persona 2 | Persona 3 |
-|:--|:--|:--|:--|
-| Dice | | | |
-| Piensa | | | |
-| Hace | | | |
-| Siente | | | |
-| Pains | | | |
-| Gains | | | |
+**Segmento 1 : Gerentes o administradores**
+![Empathy Mapping Segmento 1.jpeg](assets/Images%20Chapter%202/Empathy%20Mapping%20Segmento%201.jpeg)
 
-<p align="center">
-  <img src="assets/design/empathy-map.png" alt="Empathy Map elaborado en UXPressia" width="100%">
-</p>
+**Segmento 2 : Técnicos de mantenimiento**
+![Empathy Mapping Segmento 2.jpeg](assets/Images%20Chapter%202/Empathy%20Mapping%20Segmento%202.jpeg)
+
+**Segmento 3 : Operarios de maquinaria y producción**
+![Empathy Mapping Segmento 3.jpeg](assets/Images%20Chapter%202/Empathy%20Mapping%20Segmento%203.jpeg)
+
 
 ## 2.4 Big Picture Event Storming
 
