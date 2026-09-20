@@ -1338,7 +1338,13 @@ La propuesta contempla: un encabezado con navegación (Solution, Features, Plans
 
 **Figura: Wireframe Desktop del Landing Page de Molinex. Fuente: elaboración propia en Figma.**
 
-> Pendiente: versión Mobile Web Browser del wireframe.
+La versión Mobile Web Browser reorganiza el mismo contenido en una sola columna, priorizando el desplazamiento vertical sobre la distribución horizontal. La navegación superior se colapsa en un ícono de menú (hamburguesa) para preservar el espacio de pantalla, mientras el Hero conserva el título, la descripción, las dos llamadas a la acción y el panel de vista previa del dashboard, ahora apilados verticalmente. Las tarjetas de problemática, funcionalidades, audiencias, beneficios, pasos de funcionamiento y planes se despliegan en una sola columna de ancho completo, respetando el mismo orden y jerarquía definidos en la versión Desktop. El formulario de contacto y el footer se mantienen al final del recorrido, con campos y enlaces apilados para facilitar la interacción táctil.
+
+<p align="center">
+  <img src="assets/design/landing-wireframe-mobile.webp" alt="Wireframe Mobile del Landing Page de Molinex" width="320">
+</p>
+
+**Figura: Wireframe Mobile del Landing Page de Molinex. Fuente: elaboración propia en Figma.**
 
 ### 4.3.2 Landing Page Mockup
 
@@ -1354,7 +1360,13 @@ Este mockup corresponde a la versión ya implementada y desplegada del Landing P
 
 _Archivo de diseño en Figma:_ `https://www.figma.com/design/QytNXR0eMrUtT5MNpJarbK/Figma-Molinex`
 
-> Pendiente: versión Mobile Web Browser del mockup.
+El mockup Mobile aplica el mismo Design System de la versión Desktop (Azul Molinex `#0B4F8A`, Dorado `#F2B705`, tipografía Poppins/Inter) sobre la estructura de una sola columna. El panel del dashboard operativo conserva los indicadores de ejemplo (rendimiento 86.4 %, merma 4.8 %), el indicador "Live" y la alerta de mantenimiento. La tarjeta del plan Professional mantiene la insignia dorada "Most flexible" para destacarse frente a Basic y Enterprise, ahora apiladas en una sola columna. El footer conserva el fondo azul oscuro con los enlaces de navegación y las secciones legales (Terms and conditions, Privacy policy), garantizando consistencia de marca entre ambos breakpoints.
+
+<p align="center">
+  <img src="assets/design/landing-mockup-mobile.webp" alt="Mockup Mobile del Landing Page de Molinex" width="320">
+</p>
+
+**Figura: Mockup Mobile del Landing Page de Molinex. Fuente: elaboración propia en Figma.**
 
 ## 4.4 Web Applications UX/UI Design
 
