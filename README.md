@@ -1338,7 +1338,13 @@ La propuesta contempla: un encabezado con navegación (Solution, Features, Plans
 
 **Figura: Wireframe Desktop del Landing Page de Molinex. Fuente: elaboración propia en Figma.**
 
-> Pendiente: versión Mobile Web Browser del wireframe.
+La versión Mobile Web Browser reorganiza el mismo contenido en una sola columna, priorizando el desplazamiento vertical sobre la distribución horizontal. La navegación superior se colapsa en un ícono de menú (hamburguesa) para preservar el espacio de pantalla, mientras el Hero conserva el título, la descripción, las dos llamadas a la acción y el panel de vista previa del dashboard, ahora apilados verticalmente. Las tarjetas de problemática, funcionalidades, audiencias, beneficios, pasos de funcionamiento y planes se despliegan en una sola columna de ancho completo, respetando el mismo orden y jerarquía definidos en la versión Desktop. El formulario de contacto y el footer se mantienen al final del recorrido, con campos y enlaces apilados para facilitar la interacción táctil.
+
+<p align="center">
+  <img src="assets/design/landing-wireframe-mobile.webp" alt="Wireframe Mobile del Landing Page de Molinex" width="320">
+</p>
+
+**Figura: Wireframe Mobile del Landing Page de Molinex. Fuente: elaboración propia en Figma.**
 
 ### 4.3.2 Landing Page Mockup
 
