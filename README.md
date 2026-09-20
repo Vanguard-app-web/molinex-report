@@ -548,9 +548,19 @@ Diego Rantería, egresado de Ingeniería Agroindustrial con 5 años en la indust
 
 ### 2.3.2 User Task Matrix
 
-| Tarea | Persona 1 (Frec. / Imp.) | Persona 2 (Frec. / Imp.) | Persona 3 (Frec. / Imp.) |
+| Tarea | Jackeline – Gerente/Administradora(Frec. / Imp.) | Ismael – Técnico de Mantenimiento (Frec. / Imp.) | Diego-Operario de Producción (Frec. / Imp.) |
 |:--|:--:|:--:|:--:|
-| | | | |
+|Supervisar el estado general de la producción|Diaria/Alta|Diaria/Media |Diaria/Alta |
+|Controlar el rendimiento y la merma del proceso|Diaria/Alta|Ocasional/Baja| Diaria/Alta|
+|Controlar los costos de producción y mantenimiento|Semanal/Alta|Ocasional/Media| Ocasional/Media|
+|Detectar una falla o anomalía en una máquina|Ocasional/Media|Diaria/Alta|Ocasional/Alta|
+|Reportar una avería detectada|Ocasional/Media|Diaria/Alta|Semanal/Media|
+|Diagnosticar la causa de una falla mecánica o eléctrica|No Aplica/-|Semanal/Alta|Ocasinal/Media|
+|Reparar o dar mantenimiento a una máquina	|No Aplica/-|Semanal/Alta|No Aplica/-|
+|Coordinar con técnicos externos especializados|Ocasional/Media|Ocasional/Alta|Ocasinal/Alta|
+|Registrar información de producción o mantenimiento|Semanal/Media|Diaria/Alta|Semanal/Media|
+|Detener la producción ante una falla crítica|No Aplica/-|Ocasional/Alta|Ocasional/Alta|
+|Tomar decisiones sobre la operación del molino|Diaria/Alta|No Aplica/-|Ocasional/Media|
 
 ### 2.3.3 User Journey Mapping
 
