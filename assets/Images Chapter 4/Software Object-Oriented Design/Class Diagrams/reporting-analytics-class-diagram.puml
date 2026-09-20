@@ -12,7 +12,7 @@ package "Reporting and Analytics Bounded Context" #EAF3F8 {
     +getOperationalSummary(period : DateRange) : OperationalSummary
     +generateProductionReport(period : DateRange) : ProductionReport
     +generateMaintenanceReport(period : DateRange) : MaintenanceReport
-    +getOperationalTrend(indicator : String, period : DateRange) : OperationalTrend
+    +getOperationalTrend(indicator : string, period : DateRange) : OperationalTrend
   }
 
   class ReportingProjectionUpdater <<Event Handler>> {
@@ -27,30 +27,30 @@ package "Reporting and Analytics Bounded Context" #EAF3F8 {
   }
 
   class PublishedDomainEvent <<Published Language>> {
-    +eventName : String
-    +aggregateReference : UUID
-    +occurredAt : Instant
+    +eventName : string
+    +aggregateReference : Guid
+    +occurredAt : DateTimeOffset
     +payloadVersion : int
   }
 
   class DateRange <<Value Object>> {
     -start : LocalDate
     -end : LocalDate
-    +isValid() : boolean
+    +isValid() : bool
   }
   class MetricValue <<Value Object>> {
-    +name : String
-    +value : BigDecimal
-    +unit : String
-    +measuredAt : Instant
+    +name : string
+    +value : decimal
+    +unit : string
+    +measuredAt : DateTimeOffset
   }
   class ReportRow <<Value Object>> {
-    +dimensions : Map<String, String>
+    +dimensions : Map<string, string>
     +metrics : List<MetricValue>
   }
   class TrendPoint <<Value Object>> {
-    +recordedAt : Instant
-    +value : BigDecimal
+    +recordedAt : DateTimeOffset
+    +value : decimal
   }
 
   class OperationalSummary <<Read Model>> {
@@ -66,7 +66,7 @@ package "Reporting and Analytics Bounded Context" #EAF3F8 {
     +rows : List<ReportRow>
   }
   class OperationalTrend <<Read Model>> {
-    +indicator : String
+    +indicator : string
     +period : DateRange
     +points : List<TrendPoint>
   }

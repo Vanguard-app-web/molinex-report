@@ -18,37 +18,37 @@ package "Identity and Access Management Bounded Context" #EAF3F8 {
     --
     +assignRole(role : Role)
     +updateProfile(profile : UserProfile)
-    +verifyCredential(candidate : PasswordHash) : boolean
+    +verifyCredential(candidate : PasswordHash) : bool
     +activate()
     +deactivate()
     +toPrincipal() : AuthenticatedPrincipal
   }
 
   class UserId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
 
   class EmailAddress <<Value Object>> {
-    -value : String
-    +isValid() : boolean
+    -value : string
+    +isValid() : bool
   }
 
   class PasswordHash <<Value Object>> {
-    -value : String
-    +matches(candidate : PasswordHash) : boolean
+    -value : string
+    +matches(candidate : PasswordHash) : bool
   }
 
   class UserProfile <<Value Object>> {
-    -fullName : String
-    -jobTitle : String
-    -phoneNumber : String
-    +isValid() : boolean
+    -fullName : string
+    -jobTitle : string
+    -phoneNumber : string
+    +isValid() : bool
   }
 
   class Role <<Value Object>> {
     -type : RoleType
-    -permissions : Set<Permission>
-    +allows(permission : Permission) : boolean
+    -permissions : ISet<Permission>
+    +allows(permission : Permission) : bool
   }
 
   enum RoleType <<Enumeration>> {
@@ -72,20 +72,20 @@ package "Identity and Access Management Bounded Context" #EAF3F8 {
   }
 
   class AuthenticatedPrincipal <<Published Language>> {
-    +subject : UUID
-    +role : String
-    +permissions : Set<String>
+    +subject : Guid
+    +role : string
+    +permissions : ISet<string>
   }
 
   class UniqueEmailPolicy <<Domain Service>> {
-    +isSatisfiedBy(email : EmailAddress) : boolean
+    +isSatisfiedBy(email : EmailAddress) : bool
   }
 
   interface UserRepository <<Repository>> {
     +save(user : User)
-    +findById(id : UserId) : Optional<User>
-    +findByEmail(email : EmailAddress) : Optional<User>
-    +existsByEmail(email : EmailAddress) : boolean
+    +findById(id : UserId) : User?
+    +findByEmail(email : EmailAddress) : User?
+    +existsByEmail(email : EmailAddress) : bool
   }
 }
 

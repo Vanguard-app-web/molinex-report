@@ -12,53 +12,53 @@ package "Commercial Engagement Bounded Context" #EAF3F8 {
     -id : CommercialInquiryId
     -contact : ContactInformation
     -message : InquiryMessage
-    -submittedAt : Instant
+    -submittedAt : DateTimeOffset
     --
     +submit(contact, message, submittedAt)
   }
 
   class CommercialInquiryId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
 
   class ContactInformation <<Value Object>> {
-    -fullName : String
+    -fullName : string
     -email : EmailAddress
-    -phone : Optional<PhoneNumber>
-    -companyName : String
+    -phone : PhoneNumber?
+    -companyName : string
   }
 
   class EmailAddress <<Value Object>> {
-    -value : String
-    +isValid() : boolean
+    -value : string
+    +isValid() : bool
   }
 
   class PhoneNumber <<Value Object>> {
-    -value : String
-    +isValid() : boolean
+    -value : string
+    +isValid() : bool
   }
 
   class InquiryMessage <<Value Object>> {
-    -value : String
-    +isBlank() : boolean
+    -value : string
+    +isBlank() : bool
   }
 
   interface CommercialInquiryRepository <<Repository>> {
     +save(inquiry : CommercialInquiry)
-    +findById(id : CommercialInquiryId) : Optional<CommercialInquiry>
+    +findById(id : CommercialInquiryId) : CommercialInquiry?
   }
 
   class PlanSummary <<Read Model>> {
-    +name : String
-    +priceLabel : String
-    +features : List<String>
-    +conditions : List<String>
+    +name : string
+    +priceLabel : string
+    +features : List<string>
+    +conditions : List<string>
   }
 
   class CommercialContentQueryService <<Query Service>> {
     +getPlanCatalog() : List<PlanSummary>
-    +getValueProposition() : String
-    +getFeatureCatalog() : List<String>
+    +getValueProposition() : string
+    +getFeatureCatalog() : List<string>
   }
 }
 

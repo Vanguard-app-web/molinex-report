@@ -9,10 +9,10 @@ skinparam packageStyle rectangle
 
 package "Production-Quality Shared Kernel" #FFF2CC {
   class Weight <<Value Object>> {
-    -value : BigDecimal
+    -value : decimal
     -unit : MeasurementUnit
-    +isPositive() : boolean
-    +isNonNegative() : boolean
+    +isPositive() : bool
+    +isNonNegative() : bool
   }
 
   enum MeasurementUnit <<Enumeration>> {
@@ -26,22 +26,22 @@ package "Quality and Yield Control Bounded Context" #EAF3F8 {
     -id : QualityAssessmentId
     -productionRecordId : ProductionRecordId
     -measurements : List<QualityMeasurement>
-    -assessedAt : Instant
+    -assessedAt : DateTimeOffset
     --
     +recordMeasurement(measurement : QualityMeasurement)
-    +hasValidPercentages() : boolean
+    +hasValidPercentages() : bool
   }
 
   class WasteRecord <<Aggregate Root>> {
     -id : WasteRecordId
     -productionRecordId : ProductionRecordId
     -quantity : Weight
-    -baseWeight : Optional<Weight>
-    -percentage : Optional<Percentage>
-    -recordedAt : Instant
+    -baseWeight : Weight?
+    -percentage : Percentage?
+    -recordedAt : DateTimeOffset
     --
     +record(quantity, baseWeight, recordedAt)
-    +calculatePercentage() : Optional<Percentage>
+    +calculatePercentage() : Percentage?
   }
 
   class QualityDeviation <<Aggregate Root>> {
@@ -50,41 +50,41 @@ package "Quality and Yield Control Bounded Context" #EAF3F8 {
     -indicator : QualityIndicator
     -observedValue : Percentage
     -expectedRange : QualityRange
-    -detectedAt : Instant
+    -detectedAt : DateTimeOffset
     --
     +identify(source, indicator, observedValue, expectedRange)
   }
 
   class QualityAssessmentId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class WasteRecordId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class QualityDeviationId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
   class ProductionRecordId <<Value Object>> {
-    -value : UUID
+    -value : Guid
   }
 
   class QualityMeasurement <<Value Object>> {
     -indicator : QualityIndicator
     -value : Percentage
     -expectedRange : QualityRange
-    +isOutsideExpectedRange() : boolean
+    +isOutsideExpectedRange() : bool
   }
   class Percentage <<Value Object>> {
-    -value : BigDecimal
-    +isBetweenZeroAndOneHundred() : boolean
+    -value : decimal
+    +isBetweenZeroAndOneHundred() : bool
   }
   class QualityRange <<Value Object>> {
     -minimum : Percentage
     -maximum : Percentage
-    +contains(value : Percentage) : boolean
+    +contains(value : Percentage) : bool
   }
   class DeviationSource <<Value Object>> {
-    -sourceId : UUID
+    -sourceId : Guid
     -sourceType : DeviationSourceType
   }
   enum QualityIndicator <<Enumeration>> {
@@ -99,15 +99,15 @@ package "Quality and Yield Control Bounded Context" #EAF3F8 {
 
   interface QualityAssessmentRepository <<Repository>> {
     +save(assessment : QualityAssessment)
-    +findById(id : QualityAssessmentId) : Optional<QualityAssessment>
+    +findById(id : QualityAssessmentId) : QualityAssessment?
   }
   interface WasteRecordRepository <<Repository>> {
     +save(record : WasteRecord)
-    +findById(id : WasteRecordId) : Optional<WasteRecord>
+    +findById(id : WasteRecordId) : WasteRecord?
   }
   interface QualityDeviationRepository <<Repository>> {
     +save(deviation : QualityDeviation)
-    +findById(id : QualityDeviationId) : Optional<QualityDeviation>
+    +findById(id : QualityDeviationId) : QualityDeviation?
   }
 }
 
