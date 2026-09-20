@@ -1122,14 +1122,31 @@ A continuación se presenta el cuadro resumen del Sprint Planning Meeting, con e
 
 #### 5.2.1.3 Sprint Backlog 1
 
-**Captura y enlace al Board:** `[URL]`
 
-| Sprint # | Sprint 1 |
-|:--|:--|
 
 | Story Id | Story Title | Task Id | Task Title | Task Description | Estimation (Hours) | Assigned To | Status |
-|:--|:--|:--|:--|:--|--:|:--|:--|
-| | | | | | | | |
+|:-|:--|:--|:--|:--|--:|:--|:--|
+| US-01 | Registrar usuario | TS-01.1 | Diseñar formulario de registro | Como administrador, quiero registrar nuevos usuarios en el sistema, para otorgarles acceso a la plataforma. | 4 | Casalino Berrocal, Luisa Nhiriel | Done |
+| US-01 | Registrar usuario | TS-01.2 | Implementar API de registro | Como administrador, quiero registrar nuevos usuarios en el sistema, para otorgarles acceso a la plataforma. | 6 | Gallegos De La Cruz, Giovanni Marcelo | Done |
+| US-01 | Registrar usuario | TS-01.3 | Pruebas de integración de registro | Como administrador, quiero registrar nuevos usuarios en el sistema, para otorgarles acceso a la plataforma. | 3 | Huerta Cardenas, Brayan Benjamin | Done |
+| US-02 | Iniciar sesión | TS-02.1 | Diseñar interfaz de Login | Como usuario del molino, quiero iniciar sesión en la plataforma, para acceder a mis funciones asignadas. | 3 | Jimenez Saavedra, Antony Alexander | Done |
+| US-02 | Iniciar sesión | TS-02.2 | Implementar autenticación JWT | Como usuario del molino, quiero iniciar sesión en la plataforma, para acceder a mis funciones asignadas. | 5 | Rivera Rupay, Fabricio Jose | Done |
+| US-02 | Iniciar sesión | TS-02.3 | Validaciones de credenciales | Como usuario del molino, quiero iniciar sesión en la plataforma, para acceder a mis funciones asignadas. | 2 | Casalino Berrocal, Luisa Nhiriel | Done |
+| US-03 | Gestionar roles y permisos | TS-03.1 | Diseñar esquema de BD para RBAC | Como administrador, quiero gestionar roles y permisos de los usuarios, para restringir el acceso según el perfil. | 4 | Gallegos De La Cruz, Giovanni Marcelo | Done |
+| US-03 | Gestionar roles y permisos | TS-03.2 | Implementar middleware de autorización | Como administrador, quiero gestionar roles y permisos de los usuarios, para restringir el acceso según el perfil. | 6 | Huerta Cardenas, Brayan Benjamin | Done |
+| US-03 | Gestionar roles y permisos | TS-03.3 | UI de administración de roles | Como administrador, quiero gestionar roles y permisos de los usuarios, para restringir el acceso según el perfil. | 5 | Jimenez Saavedra, Antony Alexander | Done |
+| US-04 | Gestionar perfil de usuario | TS-04.1 | Diseñar vista de perfil | Como usuario registrado, quiero gestionar mi perfil de usuario, para mantener mis datos personales actualizados. | 3 | Rivera Rupay, Fabricio Jose | Done |
+| US-04 | Gestionar perfil de usuario | TS-04.2 | Endpoint de actualización de perfil | Como usuario registrado, quiero gestionar mi perfil de usuario, para mantener mis datos personales actualizados. | 4 | Casalino Berrocal, Luisa Nhiriel | Done |
+| US-35 | Conocer la propuesta de valor | TS-35.1 | Sección Hero Landing Page | Como visitante, quiero conocer la propuesta de valor de Molinex, para entender las ventajas de la plataforma. | 3 | Gallegos De La Cruz, Giovanni Marcelo | Done |
+| US-36 | Conocer las funcionalidades | TS-36.1 | Sección de características | Como visitante, quiero conocer las funcionalidades clave, para evaluar si cubren las necesidades de mi negocio. | 3 | Huerta Cardenas, Brayan Benjamin | Done |
+| US-37 | Consultar planes de suscripción | TS-37.1 | Tabla de precios y planes | Como visitante, quiero consultar los planes de suscripción, para identificar los costos y opciones disponibles. | 4 | Jimenez Saavedra, Antony Alexander | Done |
+| US-38 | Identificar el plan adecuado | TS-38.1 | Filtro / Recomendador de planes | Como visitante, quiero identificar el plan adecuado para mi molino, para elegir la opción que mejor responda a mi volumen de operación. | 4 | Rivera Rupay, Fabricio Jose | Done |
+| US-39 | Conocer los beneficios de Molinex | TS-39.1 | Sección de testimonios y beneficios | Como visitante, quiero conocer los beneficios de Molinex, para tomar una decisión informada sobre la adopción del sistema. | 2 | Casalino Berrocal, Luisa Nhiriel | Done |
+| US-40 | Solicitar información comercial | TS-40.1 | Formulario de contacto comercial | Como visitante, quiero solicitar información comercial, para ponerse en contacto con el equipo de ventas. | 4 | Gallegos De La Cruz, Giovanni Marcelo | Done |
+
+**Captura y enlace al Board:** `https://trello.com/invite/b/6aa9c4fdfc659047df591de0/ATTI907effe44c9315a41519954d192d71f48A54EF45/molinex`
+
+![Sprint Backlog.png](assets/Images%20Chapter%205/Sprint%20Backlog.png)
 
 #### 5.2.1.4 Development Evidence for Sprint Review
 
